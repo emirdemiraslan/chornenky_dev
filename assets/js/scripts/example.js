@@ -9,5 +9,4 @@ const obj = {
 	bar: 'Cruel',
 	baz: 'World'
 };
-
 export default obj;
