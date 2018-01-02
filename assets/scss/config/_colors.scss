@@ -15,17 +15,15 @@
 
 // examples:
 
-$c_black: #000;
+$c_bl: #000;
 
-$c_blueviolet: #8a2be2;
+$c_wh: #fff;
 
-$c_cornflowerblue: #6495ed;
+$c_brand: #57A900;
 
-$c_white: #fff;
-
-$c_red: #f00;
-
-$c_green: #0f0;
+$c_d_gr: #3B3E40;
+$c_m_gr: #686D71;
+$c_l_gr: #777C7F;
 
 
 /* =========================================
@@ -58,8 +56,7 @@ $ca_bg_body: transparent;
 
 
 // typography
-$ca_txt_display: $c_white;
+$ca_title: $c_d_gr;
+$ca_1st_txt: $c_m_gr;
+$ca_2nd_txt: #A4A7AA;
 
-$ca_txt_body: $c_white;
-
-$ca_txt_highlight: $c_white;
