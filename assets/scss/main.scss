@@ -27,12 +27,15 @@
 @import "helpers/globals/typography";
 @import "helpers/globals/responsive";
 
+
 @import "helpers/mixins/fit";
 @import "helpers/mixins/list";
 @import "helpers/mixins/reset";
 @import "helpers/mixins/clearfix";
 @import "helpers/mixins/nocollapse";
 @import "helpers/mixins/visuallyhidden";
+@import "helpers/mixins/font-face";
+@import "helpers/mixins/flexbox";
 
 // css shapes
 @import "helpers/mixins/shape-triangle";
@@ -51,7 +54,14 @@
  * ( - Each one requests external resources, keep out of critical css? - )
  */
 
-
+@include font-face(Brandon, $p_fonts+'BrandonGrotesque-Bold', bold);
+@include font-face(Brandon, $p_fonts+'BrandonGrotesque-Regular');
+@include font-face(Gotham, $p_fonts+'GothamBook');
+@include font-face(Gotham, $p_fonts+'GothamBold',bold);
+@include font-face(Gotham, $p_fonts+'subset-GothamBlack',900);
+@include font-face(MuseoSlab, $p_fonts+'MuseoSlab-300', 300);
+@include font-face(MuseoSlab, $p_fonts+'MuseoSlab-300Italic', 300, italic);
+@include font-face(MuseoSlab, $p_fonts+'MuseoSlab-700', bold);
 
 /**
  * Vendor Styles
@@ -68,5 +78,8 @@
 /**
  * Your Custom Styles
  */
-@import "elements/site";
-@import "elements/hero";
+@import "helpers/globals/custom";
+//@import "elements/site";
+//@import "elements/hero";
+@import "elements/header";
+@import "elements/home-hero";

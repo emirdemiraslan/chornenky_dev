@@ -55,7 +55,7 @@ if ( ! function_exists( 'theme_setup' ) ) {
 
 		/* Let wp know we want to use post thumbnails. */
 
-		/* add_theme_support( 'post-thumbnails' ); . */
+		 add_theme_support( 'post-thumbnails' );
 
 		// Add WP 4.1 title tag support.
 		add_theme_support( 'title-tag' );
@@ -71,13 +71,13 @@ if ( ! function_exists( 'theme_setup' ) ) {
 		*/
 
 		/* Register navigation menus for theme. */
+		add_theme_support( 'menus' );
 
-		/*
+		
 		register_nav_menus( array(
-			'primary' => 'Main Menu',
-			'footer'  => 'Footer Menu',
+			'primary' => 'Main Menu'
 		) );
-		*/
+		
 
 		/* Let wp know we are going to handle styling galleries. */
 
@@ -95,9 +95,9 @@ if ( ! function_exists( 'theme_setup' ) ) {
 
 		/* Remove toolbar for all users in front end.  */
 
-		/*
+		
 		show_admin_bar( false );
-		*/
+		
 
 		/* Add Custom Image Sizes. */
 

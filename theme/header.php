@@ -20,7 +20,32 @@
 </head>
 <body class="site__body">
 <?php // <body> closes in footer.php. ?>
-
+<header class="header sticky">
+	<div class="container--fluid top">
+		<div class="container__row">
+			<div class="container__col-sm-4">	
+				<div class="brand">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+					<span class="brand__logo">
+						<?php MOZ_SVG::svg('brand_logo'); ?>
+					</span>
+					<span class="brand__text hidden-sm-down">
+						<strong>Chornenky</strong>Creative
+					</span>
+					</a>
+				</div>
+			</div>
+			<div class="container__col-sm-8 nav">
+				<div class="nav--desktop hidden-sm-down">
+					<?php MOZ_Menu::nav_menu('primary'); ?>
+				</div>
+				<div class="nav--mobile hidden-sm-up">
+					<?php MOZ_Menu::nav_menu('primary'); ?>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
 
 
 <?php // Common header content goes here. ?>

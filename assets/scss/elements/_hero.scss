@@ -19,7 +19,7 @@
 		width: 100%;
 		height: 100%;
 
-		background: linear-gradient(to bottom right, rgba($c_cornflowerblue, 0.8), rgba($c_blueviolet, 0.8));
+		//background: linear-gradient(to bottom right, rgba($c_cornflowerblue, 0.8), rgba($c_blueviolet, 0.8));
 	}
 }
 
@@ -32,7 +32,7 @@
 
 	font-family: $t_font_display;
 	font-size: 1em;
-	color: rgba($ca_txt_body, 0.9);
+	color: rgba($ca_1st_txt, 0.9);
 
 	text-align: center;
 
@@ -51,7 +51,7 @@
 	z-index: 1;
 
 	display: inline-block;
-	color: $ca_txt_highlight;
+	color: $c_brand;
 	text-decoration: none;
 
 	font-size: 0.5em;
@@ -68,12 +68,12 @@
 		border-radius: 2px;
 		height: 1px;
 		width: 110%;
-		background-color: $ca_txt_highlight;
+		background-color: $ca_1st_txt;
 		transition: 0.2s ease;
 	}
 
 	&:hover {
-		color: $ca_highlight;
+		color: $ca_1st_txt;
 
 		&:after {
 			height: calc(100% + 1px);
@@ -88,7 +88,7 @@
 
 	path,
 	polygon {
-		fill: $c_white;
+		fill: $c_wh;
 	}
 }
 
@@ -104,7 +104,7 @@
 	max-width: $d_container_max;
 
 	font-size: 10px;
-	color: $c_white;
+	color: $c_wh;
 	text-align: center;
 
 	p {
@@ -112,6 +112,6 @@
 	}
 
 	a {
-		color: $c_white;
+		color: $c_wh;
 	}
 }

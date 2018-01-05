@@ -1,0 +1,98 @@
+.hero{
+    position: relative;
+    max-height: 700px;
+    min-height: 600px;
+    overflow: hidden;
+}
+.hero__partial{
+    position: relative;
+}
+.gradient_cta{
+    background-image: linear-gradient(314.97deg, #57A900 1%, #57A900 1.82%, #57A900 3.01%, #006890 99.9%);
+    height: 100%;
+    max-height: 700px;
+    min-height: 600px;
+    margin: 0;
+    position: relative;
+    @include rem(padding, 9.5rem 2.5rem);
+    box-sizing: border-box;
+
+    hr{
+        width: 60px;
+         @include rem(margin, 0 0 2rem 0);
+    }
+    .quote{
+        position: absolute;
+        @include rem(bottom, 2.5rem);
+        @include rem(left, 2.5rem);
+        width: 100%;
+        letter-spacing: 1px;
+
+        blockquote{
+            @include rem(font-size, 2.2rem);
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            font-weight: 300;
+            
+
+            &:before{
+                content:"“";
+                position: absolute;
+                font-family: $t_gotham;
+                @include rem(font-size, 14rem);
+                @include rem(line-height, 7rem);
+                color: $c_brand;
+                font-weight: 900;
+                font-style: normal;
+                z-index: -1;
+                @include rem(top, 0.3rem);
+                @include rem(left, 1rem);
+                
+
+            }
+            &:after{
+                content:"“";
+                position: absolute;
+                font-family: $t_gotham;
+                @include rem(font-size, 14rem);
+                @include rem(line-height, 7rem);
+                color: $c_brand;
+                font-weight: 900;
+                font-style: normal;
+                z-index: -1;
+                @include rem(bottom, 1rem);
+                @include rem(right, 1rem);
+                transform: rotateZ(180deg);
+
+            }
+        }
+
+        .quote__title{
+            font-family: $t_museo;
+            font-style: normal;
+            font-weight: 700;
+            @include rem(font-size, 1.4rem);
+            
+        }
+
+    }
+}
+.toDown{
+    @include circle(88px, $c_wh);
+    border: 1px solid #E5E5E5;
+    @include centerer();
+    bottom: 20px;
+
+    .oval{
+        @include circle(34px, $c_wh);
+        border: 1px solid #777C7F;
+        @include centerer();
+
+        .downArrow{
+            @include centerer();
+            @include arrow(6px, #777C7F, 1px, "down");
+            
+        }
+    }
+}

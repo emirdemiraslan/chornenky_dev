@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20170731 at Mon Oct 10 10:28:40 2005
+ By ,,,
+HTF Gotham  Copr. 2003 The Hoefler Type Foundry, Inc. Info: www.typography.com
+</metadata>
+<defs>
+<font id="GothamBlack" horiz-adv-x="277" >
+  <font-face 
+    font-family="Gotham Black"
+    font-weight="900"
+    font-stretch="normal"
+    units-per-em="1000"
+    panose-1="2 0 6 3 4 0 0 2 0 4"
+    ascent="800"
+    descent="-200"
+    bbox="40 343 524 705"
+    underline-thickness="20"
+    underline-position="-153"
+    unicode-range="U+0020-201C"
+  />
+<missing-glyph horiz-adv-x="500" 
+ />
+    <glyph glyph-name=".notdef" horiz-adv-x="500" 
+ />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" 
+ />
+    <glyph glyph-name="space" unicode=" " 
+ />
+    <glyph glyph-name="quotedblleft" unicode="&#x201c;" horiz-adv-x="547" 
+d="M40 502q0 54 14 92t40.5 62t64 35.5t84.5 13.5l15 -73q-102 -12 -97 -94h74v-195h-195v159zM305 502q0 54 14.5 92t40.5 62t63.5 35.5t84.5 13.5l16 -73q-101 -12 -98 -94h74v-195h-195v159z" />
+  </font>
+</defs></svg>

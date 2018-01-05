@@ -8,13 +8,19 @@
  * autocomplete
  *
  */
-
 // examples:
 
 // font family
-$t_font_display: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", calibri, helvetica, arial, sans-serif;
+$t_font_display: " Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", calibri, helvetica, arial, sans-serif;
 
 $t_font_body: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", calibri, helvetica, arial, sans-serif;
+
+$t_gotham : Gotham + $t_font_display;  
+$t_museo : MuseoSlab + $t_font_display;
+
+$t_nav : $t_gotham;  
+$t_brand : Brandon;
+
 
 // font size
 $t_size_base: 16px;
