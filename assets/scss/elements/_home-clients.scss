@@ -1,0 +1,23 @@
+.clients{
+    
+    @include rem(margin-bottom, 10rem);
+}
+
+.clients--first{
+    align-items:flex-end; 
+    justify-content: space-between;
+    .clients__client{
+        @include rem(margin, 5rem 0);
+
+        img{
+            zoom:.5;
+        }
+    }
+}
+
+.clients--headline{
+    h1{
+        text-align: center;
+        @include rem(margin, 3rem 0);
+    }
+}

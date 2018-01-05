@@ -5,13 +5,11 @@
 get_header(); 
 ?>
 <section class="hero">
-    <div class="container--fluid">
-        <div class="container__row">
-            <div class="container__col-12">
-                <?php get_template_part( 'elements/home-hero' ); ?>
-            </div>
-        </div>
-    </div>
+    <?php get_template_part( 'elements/home/_hero' ); ?>
+</section>
+
+<section class="clients">
+    <?php get_template_part( 'elements/home/_clients' ); ?>
 </section>
 
 <?php get_footer();

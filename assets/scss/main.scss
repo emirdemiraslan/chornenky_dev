@@ -18,6 +18,7 @@
 @import "helpers/functions/opposite-direction";
 @import "helpers/functions/parseInt";
 @import "helpers/functions/easing";
+@import "helpers/animations/animations";
 
 @import "helpers/mixins/rem";
 @import "helpers/mixins/bp";
@@ -83,3 +84,4 @@
 //@import "elements/hero";
 @import "elements/header";
 @import "elements/home-hero";
+@import "elements/home-clients";
