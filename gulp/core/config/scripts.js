@@ -1,12 +1,12 @@
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
 
 // utils
-var configMerge = require('../utils/configMerge');
+const configMerge = require('../utils/configMerge');
 
 // config
-var overrides = require('../../config/scripts');
-var assets = require('./common').paths.assets;
+const overrides = require('../../config/scripts');
+const assets = require('./common').paths.assets;
 
 /**
  * Script Building
@@ -18,11 +18,11 @@ var assets = require('./common').paths.assets;
 module.exports = configMerge({
 	paths: {
 		src: [
-			assets.src + '/js/*.js',
-			'!' + assets.src + '/js/**/_*'
+			`${assets.src }/js/*.js`,
+			`!${assets.src}/js/**/_*`
 		],
 		dest: assets.dest,
-		clean: assets.dest + '/js/**/*.{js,map}'
+		clean: `${assets.dest }/js/**/*.{js,map}`
 	},
 
 	options: {
@@ -49,7 +49,7 @@ module.exports = configMerge({
 				plugins: [
 					new webpack.DefinePlugin({
 						'process.env': {
-							'NODE_ENV': JSON.stringify('production')
+							NODE_ENV: JSON.stringify('production')
 						}
 					}),
 					new webpack.optimize.UglifyJsPlugin({
@@ -94,7 +94,7 @@ module.exports = configMerge({
 			defaults: {
 				plugins: [
 					new webpack.ProvidePlugin({
-						'$': 'jquery'
+						$: 'jquery'
 					})
 				],
 				externals: {
@@ -105,7 +105,16 @@ module.exports = configMerge({
 					modules: [
 						'node_modules',
 						'bower_components'
-					]
+					],
+					alias: {
+						TweenLite: path.resolve('node_modules', 'gsap/src/uncompressed/TweenLite.js'),
+						TweenMax: path.resolve('node_modules', 'gsap/src/uncompressed/TweenMax.js'),
+						TimelineLite: path.resolve('node_modules', 'gsap/src/uncompressed/TimelineLite.js'),
+						TimelineMax: path.resolve('node_modules', 'gsap/src/uncompressed/TimelineMax.js'),
+						ScrollMagic: path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/ScrollMagic.js'),
+						'animation.gsap': path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js'),
+						'debug.addIndicators': path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js')
+					}
 				},
 				output: {
 					filename: 'js/[name].js',

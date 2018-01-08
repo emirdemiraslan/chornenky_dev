@@ -95,6 +95,7 @@
     "jquery.scrollto": "^2.1.2",
     "lazysizes": "3.0.0",
     "picturefill": "3.0.2",
-    "scroll-js": "^1.8.8"
+    "scroll-js": "^1.8.8",
+    "scrollmagic": "^2.0.5"
   }
 }

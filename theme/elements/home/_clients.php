@@ -24,7 +24,7 @@
     </div>
 
 
-    <div class="row headline">
+    <div class="row headline clients--headline">
         <div class="col-12">
             <h1>for clients like these</h1>
         </div>
