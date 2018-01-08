@@ -1,0 +1,114 @@
+@import "variables";
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('#{$icomoon-font-path}/icomoon.eot?p4fzb8');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?p4fzb8#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/icomoon.ttf?p4fzb8') format('truetype'),
+    url('#{$icomoon-font-path}/icomoon.woff?p4fzb8') format('woff'),
+    url('#{$icomoon-font-path}/icomoon.svg?p4fzb8#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-circle-right {
+  &:before {
+    content: $icon-arrow-circle-right;
+  }
+}
+.icon-arrow-down {
+  &:before {
+    content: $icon-arrow-down;
+  }
+}
+.icon-checkmark-blue {
+  &:before {
+    content: $icon-checkmark-blue;
+  }
+}
+.icon-creative-design {
+  &:before {
+    content: $icon-creative-design;
+  }
+}
+.icon-development {
+  &:before {
+    content: $icon-development;
+  }
+}
+.icon-devices {
+  &:before {
+    content: $icon-devices;
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook;
+  }
+}
+.icon-green-arrow {
+  &:before {
+    content: $icon-green-arrow;
+  }
+}
+.icon-home {
+  &:before {
+    content: $icon-home;
+  }
+}
+.icon-instagram {
+  &:before {
+    content: $icon-instagram;
+  }
+}
+.icon-logo-white {
+  &:before {
+    content: $icon-logo-white;
+  }
+}
+.icon-programming {
+  &:before {
+    content: $icon-programming;
+  }
+}
+.icon-quality-assurance {
+  &:before {
+    content: $icon-quality-assurance;
+  }
+}
+.icon-small-arrow-left {
+  &:before {
+    content: $icon-small-arrow-left;
+  }
+}
+.icon-small-arrow-right {
+  &:before {
+    content: $icon-small-arrow-right;
+  }
+}
+.icon-touch {
+  &:before {
+    content: $icon-touch;
+  }
+}
+.icon-twitter {
+  &:before {
+    content: $icon-twitter;
+  }
+}
+

@@ -1,0 +1,76 @@
+.footer{
+    &__top{
+        background-color: $c_l_gr;
+        min-height: 80px;
+        @include rem(padding ,3.2rem);
+    }
+    &__bottom{
+        background-color: $c_m_gr;
+        min-height: 50px;
+
+        @include rem(padding , 1.8rem);
+    }
+    .nav .nav--desktop .menu__list{
+        padding: 0;
+        li{
+            height: auto;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0;
+            &:last-child a{
+                border:none;
+                padding-right: 0;
+                &:hover{
+                    border:none;
+                    
+                }
+
+            }
+            a{
+                line-height: 70%;
+                @include rem(padding, 0 1.7rem);
+                border-right: 1px solid $c_wh;
+                text-align: center;
+
+                &:hover{
+                    border-right: 1px solid $c_wh;
+                    
+                }
+            }
+        }
+    }
+    &-logo{
+        text-align: center;
+        @include media-breakpoint-down(sm) {
+            order:-1;
+        }
+    }
+
+    .copyright{
+        @include rem(font-size, 1.2rem);
+        text-align: left;
+    }
+    .nav--social{
+        text-align: right;
+        @include rem(font-size, 1.2rem);
+        @include media-breakpoint-down(sm) {
+            text-align: center;
+        }
+        a{
+            display: inline-block;
+            vertical-align: middle;
+            &:hover{
+                [class*=" icon-"], [class^=icon-]{
+                    color:$c_d_gr;
+                }
+            }
+        }
+        [class*=" icon-"], [class^=icon-]{
+            @include rem(font-size, 1.6rem);
+            @include rem(margin-left, 2.5rem);
+            
+        }
+    }
+    
+}
+

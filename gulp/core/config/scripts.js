@@ -92,6 +92,14 @@ module.exports = configMerge({
 			},
 
 			defaults: {
+				plugins: [
+					new webpack.ProvidePlugin({
+						'$': 'jquery'
+					})
+				],
+				externals: {
+					jquery: 'window.jQuery'
+				},
 				resolve: {
 					extensions: ['.js', '.jsx'],
 					modules: [

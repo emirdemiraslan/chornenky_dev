@@ -1,0 +1,18 @@
+.brands__wrapper{
+    text-align: center;
+    .brands__brand{
+        @include rem(padding, 5rem 2rem);
+        @include media-breakpoint-down(sm) { 
+            @include rem(padding, 5rem 0rem);
+         }
+
+        img{
+            zoom:.5;
+        }
+    }
+}
+.brands{
+    .headline h1{
+        @include rem(margin,0 0 8rem 0);
+    }
+}

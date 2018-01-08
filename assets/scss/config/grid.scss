@@ -1,6 +1,6 @@
 $grid__bp-sm: 576;
 $grid__bp-md: 768;
-$grid__bp-lg: 992;
+$grid__bp-lg: 960;
 $grid__bp-xl: 1200;
 $grid__cols: 12;
 
@@ -55,7 +55,7 @@ $map-grid-props: (
 }
 
 .container {
-  max-width: $grid__bp-md * 1px;
+  max-width: $grid__bp-lg * 1px;
   margin: 0 auto;
   &--fluid {
     margin: 0;

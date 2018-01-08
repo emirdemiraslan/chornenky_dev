@@ -3,10 +3,7 @@
  * Just delete this file :)
  *
  */
+/* eslint-disable */
+var as = "lsdkflskdf";
 
-const obj = {
-	foo: 'Hello',
-	bar: 'Cruel',
-	baz: 'World'
-};
-export default obj;
+console.log($('body').width());

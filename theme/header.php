@@ -19,11 +19,13 @@
 	<?php wp_head(); ?>
 </head>
 <body class="site__body">
-<?php // <body> closes in footer.php. ?>
+<div id="top"><?php //include_once(get_template_directory().'/assets/svg/sprite.svg'); ?></div>
+
+
 <header class="header sticky">
-	<div class="container--fluid top">
-		<div class="container__row">
-			<div class="container__col-sm-4">	
+	<div class="container-fluid top">
+		<div class="row">
+			<div class="col-sm-4">	
 				<div class="brand">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<span class="brand__logo">
@@ -35,7 +37,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="container__col-sm-8 nav">
+			<div class="col-sm-8 nav">
 				<div class="nav--desktop hidden-sm-down">
 					<?php MOZ_Menu::nav_menu('primary'); ?>
 				</div>

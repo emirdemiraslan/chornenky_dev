@@ -6,7 +6,7 @@
 @import "config/typography";
 @import "config/dimensions";
 @import "config/breakpoints";
-@import "config/grid";
+//@import "config/grid";
 
 
 
@@ -69,19 +69,25 @@
  * ( - Not Modified for Maintainability - )
  * ( - Reset/Normalize First - )
  */
+@import "vendor/bs-grid/grid";
 @import "vendor/normalize";
 @import "vendor/polyfill.object-fit";
 @import "vendor/moz-backround-picture";
 @import "vendor/utility-classes";
+@import "vendor/icomoon/style";
+
+
 
 
 
 /**
  * Your Custom Styles
  */
-@import "helpers/globals/custom";
+@import "elements/custom";
 //@import "elements/site";
 //@import "elements/hero";
 @import "elements/header";
+@import "elements/footer";
 @import "elements/home-hero";
 @import "elements/home-clients";
+@import "elements/home-brands";

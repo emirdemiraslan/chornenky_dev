@@ -1,11 +1,32 @@
 .clients{
     
-    @include rem(margin-bottom, 10rem);
+    @include rem(padding-bottom, 13rem);
+    @include rem(padding-top, 5rem);
+    @include rem(margin-top, 60rem);
+    .quote{
+        @include rem(padding-top, 3rem);
+        text-align: center;
+        color: $c_l_gr;
+        
+
+        blockquote{
+            @include rem(font-size, 1.8rem);
+            @include rem(line-height, 2.8rem);
+            &:before{
+                color: $c_gh_gr;
+            }
+            &:after{
+                color: $c_gh_gr;
+            }
+        }
+        .quote__title{
+            @include rem(margin-top, 2.5rem);
+        }
+    }
 }
 
-.clients--first{
-    align-items:flex-end; 
-    justify-content: space-between;
+.clients__wrapper{
+    text-align: center;
     .clients__client{
         @include rem(margin, 5rem 0);
 
@@ -14,10 +35,14 @@
         }
     }
 }
+.clients--second {
+    align-items: flex-start;
+}
 
-.clients--headline{
+section .headline{
     h1{
         text-align: center;
-        @include rem(margin, 3rem 0);
+        line-height: 85%;
+        @include rem(margin, 2.5rem 0);
     }
 }

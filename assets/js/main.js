@@ -1,7 +1,7 @@
 /* eslint-disable import/first */
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint import/no-unresolved: [2, { ignore: ['^glob:'] }] */
-
+/* eslint no-console: 0 */
 /**
  * Setup webpack public path
  * to enable lazy-including of
@@ -39,6 +39,8 @@ import 'glob:../svg/**/*.svg';
  * Your theme's js starts
  * here...
  */
+
+import './scripts/homepage';
 
 // silly example:
 import obj from './scripts/example';

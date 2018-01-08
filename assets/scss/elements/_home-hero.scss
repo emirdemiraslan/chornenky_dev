@@ -1,19 +1,14 @@
 .hero{
-    position: relative;
-    
     overflow: hidden;
-    @include rem(margin-bottom,5rem);
+    top:60px;
 }
 .hero__partial{
     position: relative;
-    max-height: 800px;
-    min-height: 600px;
+    height: 600px;
 }
 .gradient_cta{
     background-image: linear-gradient(314.97deg, #57A900 1%, #57A900 1.82%, #57A900 3.01%, #006890 99.9%);
-    height: 100%;
-    max-height: 800px;
-    min-height: 600px;
+    height: 600px;
     margin: 0;
     position: relative;
     @include rem(padding, 9.5rem 2.5rem);
@@ -36,51 +31,15 @@
 
         blockquote{
             @include rem(font-size, 2.2rem);
-            position: relative;
-            z-index: 1;
-            display: inline-block;
-            font-weight: 300;
-            
-
             &:before{
-                content:"“";
-                position: absolute;
-                font-family: $t_gotham;
-                @include rem(font-size, 14rem);
-                @include rem(line-height, 7rem);
                 color: $c_brand;
-                font-weight: 900;
-                font-style: normal;
-                z-index: -1;
-                @include rem(top, 0.3rem);
-                @include rem(left, 1rem);
-                
-
             }
             &:after{
-                content:"“";
-                position: absolute;
-                font-family: $t_gotham;
-                @include rem(font-size, 14rem);
-                @include rem(line-height, 7rem);
                 color: $c_brand;
-                font-weight: 900;
-                font-style: normal;
-                z-index: -1;
-                @include rem(bottom, 1rem);
-                @include rem(right, 1rem);
-                transform: rotateZ(180deg);
-
             }
         }
 
-        .quote__title{
-            font-family: $t_museo;
-            font-style: normal;
-            font-weight: 700;
-            @include rem(font-size, 1.4rem);
-            
-        }
+        
 
     }
 }
@@ -89,19 +48,19 @@
     border: 1px solid #E5E5E5;
     @include centerer("x");
     bottom: 20px;
-    transition:0.6s easing('outExpo');
+    transition:$quick_tr;
 
     .oval{
         @include circle(34px, $c_wh);
         border: 1px solid #777C7F;
         @include centerer("xy");
         overflow: hidden;
-        transition:0.6s easing('outExpo');
+        transition:$quick_tr;
 
         .downArrow{
             @include centerer("xy");
             @include arrow(4px, #777C7F, 1px, "down");
-            transition:0.6s easing('outExpo');
+            transition:$quick_tr;
             
         }
     }
@@ -109,12 +68,12 @@
          box-shadow: 0px 0px 10px 4px rgba($color: #000000, $alpha: .2);
          bottom:15px; 
          .oval{
-             background-color:$c_l_gr;
+             //background-color:$c_l_gr;
              
              .downArrow{
                 @include animation('theFall 0.3s 1');
                 animation-timing-function: easing('inOutSine');
-                border-color: $c_wh;
+                //border-color: $c_wh;
             }
          }
     }

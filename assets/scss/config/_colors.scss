@@ -15,6 +15,8 @@
 
 // examples:
 
+
+
 $c_bl: #000;
 
 $c_wh: #fff;
@@ -24,6 +26,7 @@ $c_brand: #57A900;
 $c_d_gr: #3B3E40;
 $c_m_gr: #686D71;
 $c_l_gr: #777C7F;
+$c_gh_gr: #DEE2E4; //ghost Gray
 
 
 /* =========================================
@@ -53,7 +56,7 @@ $ca_success: $c_green;
 */
 
 // elements
-$ca_bg_body: transparent;
+$ca_bg: $c_wh;
 
 
 // typography
