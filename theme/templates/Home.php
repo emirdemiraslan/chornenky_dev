@@ -12,19 +12,13 @@ get_header();
     <section id="clients" class="clients">
         <?php get_template_part( 'elements/home/_clients' ); ?>
     </section>
+
     <section id="brands" class="brands">
         <?php get_template_part( 'elements/home/_brands' ); ?>
     </section>
-    <section class="cta">
 
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-auto">
-                    <a href="#" class="button bordered">check out our work</a>
-                </div>
-            </div>
-        </div>
-
+    <section class="cta testimonials">
+        <?php get_template_part( 'elements/home/_bottom' ); ?>
     </section>
 </main>
 <?php get_footer();

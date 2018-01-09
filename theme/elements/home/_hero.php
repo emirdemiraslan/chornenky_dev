@@ -16,7 +16,7 @@
         </div>
         <div class="col-lg-6 hidden-md-down">
             <?php
-			MOZ_Image::image( 4, array(
+			MOZ_Image::image( 17, array(
 				'full',
 				'large',
 				'medium'

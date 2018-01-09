@@ -20,6 +20,8 @@ $(document).ready(function(){
 
     var controller = new ScrollMagic.Controller();
 
+    var default_ease = SlowMo.easeOut;
+
     //slideTop the clients
     var clientTweens = new TimelineMax()
     .to('#clients',0.1,{
@@ -35,9 +37,9 @@ $(document).ready(function(){
         duration:100
 
     })
-    .addIndicators({name: "clientsIn"})
     .setTween(clientTweens)
-    .addTo(controller);
+    .addTo(controller)
+    //.addIndicators({name: "clientsIn"})
     
     var clientOutTweens = new TimelineMax({
         onComplete : function () {
@@ -45,24 +47,24 @@ $(document).ready(function(){
 
         }
     })
-    .to('.clients--first', 0.7, {
+    .to('.clients--first', 0.5, {
         x: "+=1000px",
         filter: "blur(2px)",
-        ease: Elastic.easeInOut,
+        ease: default_ease,
         alpha: 0
-    }, 0.1).to('.clients--headline', 0.7, {
-        y: "+=100px",
+    }, 0.1).to('.clients--headline', 0.3, {
+        y: "+=50px",
         filter: "blur(1px)",
-        ease: Elastic.easeInOut,
+        ease: default_ease,
         alpha: 0
 
-    }, 1).to('.clients--second', 0.7, {
+    }, 0).to('.clients--second', 0.5, {
         x: "-=1000px",
         filter: "blur(2px)",
-        ease: Elastic.easeInOut,
+        ease: default_ease,
         alpha : 0
 
-    }, 0.7);
+    }, 0.2);
 
     
     
@@ -75,15 +77,16 @@ $(document).ready(function(){
     })
     .setPin('#clients')
     .addTo(controller);
+    //.addIndicators({name:'ClientsPin'})
 
     var sceneOutClients = new ScrollMagic.Scene({
         triggerElement:'#clients',
         triggerHook: 'onLeave',
-        offset: -40
+        offset: 0
     })
-    .addIndicators({name: 'outClients'})
     .setTween(clientOutTweens)
     .addTo(controller);
+    //.addIndicators({name: 'outClients'})
 
 
 
@@ -91,36 +94,43 @@ $(document).ready(function(){
     .from('#brands .brands--top',0.5, {
         x: "-=1000px",
         filter: "blur(2px)",
-        ease: Elastic.easeOut,
+        ease: default_ease,
         alpha:0
-    },0.5)
-    .from('#brands .brands--headline', 0.5, {
-        y: "+=100px",
-        filter: "blur(2px)",
-        ease: Elastic.easeOut,
+    },0.1)
+    .from('#brands .brands--headline', 0.3, {
+        y: "+=50px",
+        filter: "blur(1px)",
+        ease: default_ease,
         alpha: 0
-    },0.7)
+    },0)
     .from('#brands .brands--bottom', 0.5, {
         x: "+=1000px",
         filter: "blur(2px)",
-        ease: Elastic.easeOut,
+        ease: default_ease,
         alpha: 0
-    },1)
+    },0.2)
 
     var sceneInBrands = new ScrollMagic.Scene({
         triggerElement : '#brands',
         triggerHook : .1,
-        offset:0
+        offset:0,
+        onStart: function(e){
+            console.log(this);
+            this.setPin('#clients');
+        }
     })
     .on("leave", function (e) {
-        setTimeout(function(){
-            $(window).scrollTo($('#clients'), 500, {offset: -60});
-        },1000);
-        console.log(e.scrollDirection);
+        if(e.scrollDirection === "REVERSE"){
+            setTimeout(function(){
+                
+                $(window).scrollTo({ left: 0, top: 625 }, 500, {offset: -60});
+            },1000);
+
+        }
     })
-    .addIndicators({name:'inBrands'})
     .setTween(brandsInTween)
     .addTo(controller)
+    //.addIndicators({name:'inBrands'})
     
 
 

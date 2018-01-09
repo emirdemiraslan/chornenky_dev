@@ -1,0 +1,22 @@
+.testimonials{
+   .quote{
+        @include rem(padding, 3rem 0);
+        text-align: center;
+        color: $c_l_gr;
+        
+
+        blockquote{
+            @include rem(font-size, 1.8rem);
+            @include rem(line-height, 2.8rem);
+            &:before{
+                color: $c_gh_gr;
+            }
+            &:after{
+                color: $c_gh_gr;
+            }
+        }
+        .quote__title{
+            @include rem(margin-top, 2.5rem);
+        }
+    }
+}
