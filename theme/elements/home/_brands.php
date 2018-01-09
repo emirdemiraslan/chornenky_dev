@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid brands--top">
     <div id ="first__brand__row" class="marquee">
         <div class="marquee__wrapper">
             <div class="row justify-content-around align-items-center brands__wrapper">
@@ -58,7 +58,7 @@
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container brands--headline">
     <div class="row headline">
         <div class="col">
             <h1>and their awesome brands</h1>
@@ -66,7 +66,7 @@
     </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid brands--bottom">
     <div class="row justify-content-center align-items-center brands__wrapper">
         <div class="col-md-auto col-6 brands__brand">
             <a href="#">

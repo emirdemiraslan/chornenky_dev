@@ -12,7 +12,7 @@ get_header();
     <section id="clients" class="clients">
         <?php get_template_part( 'elements/home/_clients' ); ?>
     </section>
-    <section class="brands">
+    <section id="brands" class="brands">
         <?php get_template_part( 'elements/home/_brands' ); ?>
     </section>
     <section class="cta">

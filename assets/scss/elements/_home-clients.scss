@@ -3,6 +3,7 @@
     @include rem(padding-bottom, 13rem);
     @include rem(padding-top, 5rem);
     @include rem(margin-top, 60rem);
+    overflow: hidden;
     .quote{
         @include rem(padding-top, 3rem);
         text-align: center;
