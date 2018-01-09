@@ -15,7 +15,9 @@
 
         </div>
         <div class="col-lg-6 hidden-md-down">
+            <img src="<?php echo get_template_directory_uri().'/assets/img/home-hero-bg.jpg'; ?>" alt="">
             <?php
+            /*
 			MOZ_Image::image( 17, array(
 				'full',
 				'large',
@@ -23,7 +25,8 @@
 			), array(
 				'(min-width: 1024px) 1024px',
 				'100vw'
-			) );
+            ) );
+            */
 			?>
         </div>
     </div>

@@ -4,7 +4,6 @@ import {TweenMax, TimelineLite} from 'gsap';
 export function marquee(_dir, _dur, _div) {
     var _div = $(_div);
     var _wrapper = $(_div).find('.marquee__wrapper');
-    console.log(_div);
 
     var _to = 0;
 

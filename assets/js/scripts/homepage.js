@@ -33,8 +33,8 @@ $(document).ready(function(){
     
     var sceneClients = new ScrollMagic.Scene({
         triggerHook:'onLeave',
-        offset:1,
-        duration:100
+        offset:25,
+        duration:620
 
     })
     .setTween(clientTweens)
@@ -113,11 +113,7 @@ $(document).ready(function(){
     var sceneInBrands = new ScrollMagic.Scene({
         triggerElement : '#brands',
         triggerHook : .1,
-        offset:0,
-        onStart: function(e){
-            console.log(this);
-            this.setPin('#clients');
-        }
+        offset:0
     })
     .on("leave", function (e) {
         if(e.scrollDirection === "REVERSE"){
@@ -131,6 +127,8 @@ $(document).ready(function(){
     .setTween(brandsInTween)
     .addTo(controller)
     //.addIndicators({name:'inBrands'})
+
+    
     
 
 

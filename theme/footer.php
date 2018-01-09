@@ -20,7 +20,7 @@
                         </div>
                         <div class="col-md-auto col-sm-12 footer-logo">
                             
-                                <span data-target="#top" class="brand__logo">
+                                <span class="brand__logo">
                                     <?php MOZ_SVG::svg('logo-white'); ?>
                                 </span>
                             
