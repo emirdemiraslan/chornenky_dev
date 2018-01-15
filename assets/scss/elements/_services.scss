@@ -1,0 +1,24 @@
+.services{
+
+    .content_block{
+        @include rem(padding, 7rem 6rem);
+        h1{
+            @include rem(font-size, 2.8rem);
+            @include rem(line-height, 3.2rem);
+        }
+        p{
+            @include rem(font-size, 1.8rem);
+            @include rem(line-height, 3.2rem);
+        }
+        li{
+            @include rem(font-size, 1.8rem);
+            @include rem(line-height, 3.2rem);
+        }
+    }
+}
+.title.iconned{
+    [class*=" icon-"], [class^=icon-]{
+        color:$ca_2nd_txt;
+        @include rem(margin-right, 2.1rem);
+    }
+}

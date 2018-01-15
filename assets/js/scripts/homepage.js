@@ -132,7 +132,13 @@ $(document).ready(function(){
     
 
 
+//insert icons to list
 
+    $("div[class*='list-icon']").each(function(i){
+        var icon_name = $(this).attr('class').split(' ').pop();
+        var icon_to_prepend = icon_name.substring(5,icon_name.length);
+        $(this).find('ul li').prepend("<span class='"+icon_to_prepend+"'></span>");
+    });
 
 
 });

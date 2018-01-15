@@ -4,7 +4,7 @@
 */
 get_header(); 
 ?>
-<main>
+<main class="home">
     <section id="hero" class="hero fixed">
         <?php get_template_part( 'elements/home/_hero' ); ?>
     </section>

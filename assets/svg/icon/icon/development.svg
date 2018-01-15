@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="30px" viewBox="0 0 35 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/development</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/development" fill="#A4A7AA" fill-rule="nonzero">
+            <g id="window-dev">
+                <polygon id="Shape" points="10.0467294 18.3962264 12.3108804 20.6603774 11.6037736 21.3674841 8.63251586 18.3962264 11.6037736 15.4249687 12.3108804 16.1320755"></polygon>
+                <polygon id="Shape" points="22.2174215 16.1320755 22.9245283 15.4249687 25.895786 18.3962264 22.9245283 21.3674841 22.2174215 20.6603774 24.4815725 18.3962264"></polygon>
+                <polygon id="Shape" points="15.2236068 23.5953487 14.3291796 23.1481351 19.3046951 13.1971041 20.1991223 13.6443177"></polygon>
+                <polygon id="Shape" points="4.31132075 4.74528302 4.31132075 3.74528302 7.5754717 3.74528302 7.5754717 4.74528302"></polygon>
+                <polygon id="Shape" points="9.97169811 4.74528302 9.97169811 3.74528302 13.2358491 3.74528302 13.2358491 4.74528302"></polygon>
+                <polygon id="Shape" points="22.990566 4.74528302 22.990566 3.74528302 30.2169811 3.74528302 30.2169811 4.74528302"></polygon>
+                <polygon id="Shape" points="-0.216981132 8.70754717 -0.216981132 7.70754717 34.745283 7.70754717 34.745283 8.70754717"></polygon>
+                <path d="M0.783018868,0.783018868 L0.783018868,29.2169811 L33.745283,29.2169811 L33.745283,0.783018868 L0.783018868,0.783018868 Z M34.745283,-0.216981132 L34.745283,30.2169811 L-0.216981132,30.2169811 L-0.216981132,-0.216981132 L34.745283,-0.216981132 Z" id="Rectangle-path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
