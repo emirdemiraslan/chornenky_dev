@@ -1,21 +1,96 @@
-.services{
+.content_block{
+    @include rem(padding, 7rem 6rem);
+    .single-col & {
+        @include rem(padding, 7rem 0);
+        .title h1{
+            text-align: center;
+        }
+    }
+    h1{
+        @include rem(font-size, 2.8rem);
+        @include rem(line-height, 3.2rem);
+    }
+    p{
+        @include rem(font-size, 1.8rem);
+        @include rem(line-height, 3.2rem);
+    }
+    ul{
+        padding: 0;
+    }
+    li{
+        @include rem(font-size, 1.8rem);
+        @include rem(line-height, 3.2rem);
+       
+        list-style: none;
+        [class*=" icon-"], [class^=icon-]{
+                @include rem(margin-right, 2.2rem);
+                @include rem(font-size, 1.4rem);
+                
 
-    .content_block{
-        @include rem(padding, 7rem 6rem);
-        h1{
-            @include rem(font-size, 2.8rem);
-            @include rem(line-height, 3.2rem);
-        }
-        p{
-            @include rem(font-size, 1.8rem);
-            @include rem(line-height, 3.2rem);
-        }
-        li{
-            @include rem(font-size, 1.8rem);
-            @include rem(line-height, 3.2rem);
         }
     }
 }
+
+
+[class*=" list-icon-"], [class^=list-icon-] {
+    li{
+        display: flex;
+        align-items: baseline;
+    }
+    
+}
+.two_column_wysiwyg, .two_column_icon_boxes {
+    
+    .wysiwyg, .iconbox{
+        display: flex;
+        justify-content: space-around;
+        ul, div{
+            width:85%;
+            li{
+                 @include rem(margin-bottom, 3.2rem);
+            }
+        }
+        
+
+        &:first-of-type{
+            &:after{
+                content:" ";
+                height:85%;
+                border-right:1px solid $c_gh_gr;
+                
+
+                .darkbg & {
+                    border-right:1px solid $c_m_gr;
+                }
+                width:1px;
+                position: absolute;
+                top:20px;
+                right: 0;
+
+            }
+        }
+    }
+}
+.two_column_icon_boxes {
+    .iconbox{
+        text-align: center;
+        align-items: center;
+        &:first-of-type{
+            &::after{
+                top:0;
+            }
+        }
+        .iconbox__icon{
+            @include rem(font-size, 5rem);
+            color: $ca_iconbox;
+        }
+    }
+}
+
+.wysiwyg.row{
+    @include rem(margin-bottom, 8rem);
+}
+
 .title.iconned{
     [class*=" icon-"], [class^=icon-]{
         color:$ca_2nd_txt;

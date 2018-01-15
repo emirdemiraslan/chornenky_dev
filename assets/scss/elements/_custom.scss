@@ -5,12 +5,19 @@ html, body, p{
     -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+p{
+    @include rem(margin, 0 0 1rem 0 );
+}
 li{
     color: $ca_2nd_txt;
 }
 .container-fluid{
     padding:0;
     overflow: hidden;
+}
+.container{
+    padding: 0;
+    margin: auto;
 }
 section.fixed{
     position: fixed;
