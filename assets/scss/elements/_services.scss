@@ -29,6 +29,27 @@
 
         }
     }
+    @include media-breakpoint-down(md){
+
+        .single-col & {
+            p{
+                @include rem(padding, 0 4rem);
+            }
+        }
+        @include rem(padding, 7rem 4rem);
+        p, h1, h2, h3, h4, h5, h6{
+            text-align: center;
+        }
+    }
+    @include media-breakpoint-down(sm){
+        @include rem(padding, 5rem 2rem);
+        .single-col & {
+            p{
+
+                @include rem(padding, 0rem 2rem);
+            }
+        }
+    }
 }
 
 
@@ -45,14 +66,21 @@
         display: flex;
         justify-content: space-around;
         ul, div{
-            width:85%;
+            width:90%;
             li{
                  @include rem(margin-bottom, 3.2rem);
+                 &:last-child{
+                     margin-bottom: 0;
+                 }
             }
+        }
+        ul{
+            @include rem(padding, 2.5rem 0);
         }
         
 
         &:first-of-type{
+            
             &:after{
                 content:" ";
                 height:85%;
@@ -60,24 +88,42 @@
                 
 
                 .darkbg & {
-                    border-right:1px solid $c_m_gr;
+                    border-color:$c_m_gr;
                 }
                 width:1px;
                 position: absolute;
                 top:20px;
                 right: 0;
+                @include media-breakpoint-down(md){
+                    width: 100%;
+                    height: 1px;
+                    border-right: none;
+                    border-bottom: 1px solid $c_gh_gr;
+                    bottom: 0;
+                    left: 0;
+                    top: initial;
+                }
 
             }
         }
     }
 }
 .two_column_icon_boxes {
+    @include rem(padding-top,4rem);
     .iconbox{
         text-align: center;
         align-items: center;
+        @include rem(padding, 3rem 0)
         &:first-of-type{
+            
             &::after{
                 top:0;
+                @include media-breakpoint-down(md){
+                    bottom: 0;
+                    top: initial;
+                    width: 25%;
+                    @include centerer('x');
+                }
             }
         }
         .iconbox__icon{
@@ -87,13 +133,17 @@
     }
 }
 
-.wysiwyg.row{
-    @include rem(margin-bottom, 8rem);
-}
 
 .title.iconned{
     [class*=" icon-"], [class^=icon-]{
         color:$ca_2nd_txt;
         @include rem(margin-right, 2.1rem);
+    }
+}
+
+//custom styles for sections
+.creative_design{
+    p{
+        @include rem(margin-bottom, 7rem);
     }
 }

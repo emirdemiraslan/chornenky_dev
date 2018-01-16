@@ -1,6 +1,6 @@
-<div class="hero__partial container--fluid">
-    <div class="container__row">
-        <div class="container__col-lg-6 container__col-md-12">
+<div class="hero__partial container-fluid">
+    <div class="row no-gutters">
+        <div class="col-lg-6 col-md-12">
             <div class="gradient_cta darkbg">
                 <h3>We are Chornenky Creative,<br/>a digital design agency</h3>
                 <hr>
@@ -14,22 +14,17 @@
             </div>
 
         </div>
-        <div class="container__col-lg-6 hidden-lg-down">
-            <?php
-			MOZ_Image::image( 17, array(
-				'full',
-				'large',
-				'medium'
-			), array(
-				'(min-width: 1024px) 1024px',
-				'100vw'
-			) );
-			?>
+        <div class="col-lg-6 hidden-md-down">
+            <div class="img-cover" style="background-image:url(<?php echo get_template_directory_uri();?>/assets/img/home-hero-bg.jpg);"></div>
         </div>
     </div>
-    <button class="toDown">
+    <button id="toDown" data-target="#clients" class="toDown">
         <span class="oval">
             <span class="downArrow"></span>
         </span>
     </button>
+    <script>
+
+    </script>
 </div>
+
