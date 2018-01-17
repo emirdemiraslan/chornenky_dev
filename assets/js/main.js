@@ -40,7 +40,7 @@ import 'glob:../svg/**/*.svg';
  * here...
  */
 
-import './scripts/homepage';
+import './scripts/fullHomepage';
 
 // silly example:
 import obj from './scripts/example';

@@ -4,21 +4,21 @@
 */
 get_header(); 
 ?>
-<main class="home">
-    <section id="hero" class="hero fixed">
+<div id="home_main" class="home">
+    <div id="hero" class="section hero fixed">
         <?php get_template_part( 'elements/homefull/_hero' ); ?>
-    </section>
+    </div>
 
-    <section id="clients" class="clients">
-        <?php get_template_part( 'elements/home/_clients' ); ?>
-    </section>
+    <div id="clients" class="section clients">
+        <?php get_template_part( 'elements/homefull/_clients' ); ?>
+    </div>
 
-    <section id="brands" class="brands">
+    <div id="brands" class="section brands">
         <?php get_template_part( 'elements/home/_brands' ); ?>
-    </section>
+    </div>
 
-    <section class="cta testimonials">
+    <div class="section cta testimonials">
         <?php get_template_part( 'elements/home/_bottom' ); ?>
-    </section>
-</main>
+    </div>
+</div>
 <?php get_footer();

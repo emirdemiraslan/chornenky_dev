@@ -92,6 +92,7 @@
   },
   "dependencies": {
     "babel-polyfill": "6.23.0",
+    "fullpage.js": "^2.9.5",
     "jquery.scrollto": "^2.1.2",
     "lazysizes": "3.0.0",
     "picturefill": "3.0.2",

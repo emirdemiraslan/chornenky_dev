@@ -13,7 +13,7 @@
 }
 .brands{
     overflow: hidden;
-    @include rem(padding,8rem 0);
+    //@include rem(padding,8rem 0);
     .headline h1{
         @include rem(margin,4rem 0);
     }

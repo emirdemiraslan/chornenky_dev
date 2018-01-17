@@ -1,8 +1,8 @@
 .clients{
     
-    @include rem(padding-bottom, 16rem);
-    @include rem(padding-top, 5rem);
-    @include rem(margin-top, 60rem);
+    //@include rem(padding-bottom, 16rem);
+    //@include rem(padding-top, 5rem);
+    //@include rem(margin-top, 60rem);
     overflow: hidden;
     
 }
@@ -10,7 +10,7 @@
 .clients__wrapper{
     text-align: center;
     .clients__client{
-        @include rem(margin, 5rem 0);
+        //@include rem(margin, 5rem 0);
 
         img{
             zoom:.5;
@@ -21,10 +21,10 @@
     align-items: flex-start;
 }
 
-section .headline{
+.section .headline{
     h1{
         text-align: center;
         line-height: 85%;
-        @include rem(margin, 2.5rem 0);
+        @include rem(margin, 7.5rem 0);
     }
 }
