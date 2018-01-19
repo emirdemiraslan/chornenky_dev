@@ -9,16 +9,19 @@ get_header();
         <?php get_template_part( 'elements/homefull/_hero' ); ?>
     </div>
 
-    <div id="clients" class="section clients">
+    <div id="clients" class="section clients scalable">
         <?php get_template_part( 'elements/homefull/_clients' ); ?>
     </div>
+    <div class="section empty">
 
-    <div id="brands" class="section brands">
-        <?php get_template_part( 'elements/home/_brands' ); ?>
     </div>
 
-    <div class="section cta testimonials">
-        <?php get_template_part( 'elements/home/_bottom' ); ?>
+    <div id="brands" class="section brands scalable">
+        <?php get_template_part( 'elements/homefull/_brands' ); ?>
+    </div>
+
+    <div class="section cta testimonials scalable">
+        <?php get_template_part( 'elements/homefull/_bottom' ); ?>
     </div>
 </div>
 <?php get_footer();

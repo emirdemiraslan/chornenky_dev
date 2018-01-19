@@ -25,23 +25,23 @@
 <header class="header sticky">
 	<div class="container-fluid top">
 		<div class="row">
-			<div class="col-sm-4">	
+			<div class="col-md-6">	
 				<div class="brand">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<span class="brand__logo">
 						<?php MOZ_SVG::svg('brand_logo'); ?>
 					</span>
-					<span class="brand__text hidden-sm-down">
+					<span class="brand__text hidden-md-down">
 						<strong>Chornenky</strong>Creative
 					</span>
 					</a>
 				</div>
 			</div>
-			<div class="col-sm-8 nav">
-				<div class="nav--desktop hidden-sm-down">
+			<div class="col-md-6 nav">
+				<div class="nav--desktop hidden-md-down">
 					<?php MOZ_Menu::nav_menu('primary'); ?>
 				</div>
-				<div class="nav--mobile hidden-sm-up">
+				<div class="nav--mobile hidden-lg-up">
 					<?php MOZ_Menu::nav_menu('primary'); ?>
 				</div>
 			</div>

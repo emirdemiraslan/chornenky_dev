@@ -2,8 +2,8 @@
     text-align: center;
     .brands__brand{
         @include rem(padding, 2rem 2rem);
-        @include media-breakpoint-down(sm) { 
-            @include rem(padding, 5rem 0rem);
+        @include media-breakpoint-down(md) { 
+            @include rem(padding, 1rem 0rem);
          }
 
         img{
@@ -16,5 +16,8 @@
     //@include rem(padding,8rem 0);
     .headline h1{
         @include rem(margin,4rem 0);
+        @include media-breakpoint-down(sm){
+            font-size: 6vw;
+        }
     }
 }

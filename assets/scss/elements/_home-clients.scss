@@ -6,14 +6,19 @@
     overflow: hidden;
     
 }
+.col.clients__client {
+    max-height: 110px;
+}
 
 .clients__wrapper{
     text-align: center;
+    height: 110px;
     .clients__client{
         //@include rem(margin, 5rem 0);
 
         img{
-            zoom:.5;
+            //zoom:.5;
+            max-height: 110px;
         }
     }
 }

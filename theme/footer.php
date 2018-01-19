@@ -36,6 +36,7 @@
             </div>
         </div>
     </div>
+    <!--
     <div class="container-fluid footer__bottom">
         <div class="row">
             <div class="col">
@@ -54,6 +55,7 @@
             </div>
         </div>
     </div>
+    -->
 </footer>
 
 

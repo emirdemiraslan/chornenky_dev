@@ -113,7 +113,7 @@
     .iconbox{
         text-align: center;
         align-items: center;
-        @include rem(padding, 3rem 0)
+        @include rem(padding, 3rem 0);
         &:first-of-type{
             
             &::after{

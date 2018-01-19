@@ -3,8 +3,15 @@
     z-index: 1;
     &__top{
         background-color: $c_l_gr;
-        min-height: 80px;
+        min-height: 124px;
         @include rem(padding ,3.2rem);
+        @include media-breakpoint-down(md){
+            padding: 0;
+            &>.row{
+                align-items: center;
+                justify-content: center;
+            }
+        }
     }
     &__bottom{
         background-color: $c_m_gr;
@@ -13,6 +20,10 @@
         @include rem(padding , 1.8rem);
     }
     .nav .nav--desktop .menu__list{
+        @include media-breakpoint-down(md){
+            justify-content: center;
+            height: 50px;
+        }
         padding: 0;
         li{
             height: auto;
@@ -51,6 +62,12 @@
     .copyright{
         @include rem(font-size, 1.2rem);
         text-align: left;
+        @include media-breakpoint-down(md){
+            text-align: center;
+        }
+        @include media-breakpoint-down(sm){
+            font-size: 2.3vw;
+        }
     }
     .nav--social{
         text-align: right;

@@ -1,16 +1,32 @@
 .hero{
     overflow: hidden;
-    top:60px;
 }
 .hero__partial{
     position: relative;
 }
+.home{
+    top:-60px;
+    .hero__partial, .hero__partial>.row.no-gutters, .hero__partial .gradient_cta{
+        height: 100%;
+    }
+} 
 .gradient_cta{
     background-image: linear-gradient(314.97deg, #57A900 1%, #57A900 1.82%, #57A900 3.01%, #006890 99.9%);
     margin: 0;
     position: relative;
-    @include rem(padding, 9.5rem 2.5rem);
+    @include rem(padding, 6.5rem 2.5rem);
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    &:before, &:after{
+        content: " ";
+    }
+
+    @include media-breakpoint-down(md){
+        align-items: center
+    }
 
     hr{
         width: 60px;
@@ -18,14 +34,32 @@
     }
     h1{
         max-width: 520px;
+        @include media-breakpoint-down(md){
+            text-align: center;
+            max-width: initial;
+            font-size: 6.5vw;
+        }
+    }
+    h3{
+        @include media-breakpoint-down(md){
+            text-align: center;
+            font-size: 4vw;
+        }
     }
     .quote{
+        /*
         position: absolute;
         @include rem(bottom, 2.5rem);
         @include rem(left, 2.5rem);
+        */
         width: 80%;
         max-width: 520px;
         letter-spacing: 1px;
+        @include media-breakpoint-down(md){
+            max-width: initial;
+            width: 100%;
+            text-align: center;
+        }
 
         blockquote{
             @include rem(font-size, 2.2rem);
@@ -34,6 +68,9 @@
             }
             &:after{
                 color: $c_brand;
+            }
+            @include media-breakpoint-down(md){
+                font-size: 4vw;
             }
         }
 
