@@ -2,10 +2,10 @@
 
 import 'fullpage.js';
 import { marquee } from '../utils/marquee';
-import { Elastic, SlowMo, TimelineLite } from 'gsap';
+import { SlowMo, TimelineLite } from 'gsap';
 
 var default_ease = SlowMo.easeOut;
-var headline_ease = Elastic.easeInOut;
+var headline_ease = SlowMo.easeInOut;
 var running = 0;
     $(document).ready(function(e){
 
