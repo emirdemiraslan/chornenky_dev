@@ -43,7 +43,7 @@ import 'glob:../svg/**/*.svg';
 import './scripts/fullHomepage';
 
 // silly example:
-import obj from './scripts/example';
+// import obj from './scripts/example';
 
 /* eslint no-console: 0 */
-console.log(obj);
+// console.log(obj);

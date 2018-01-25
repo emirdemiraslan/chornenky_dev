@@ -4,6 +4,3 @@
  *
  */
 /* eslint-disable */
-var as = "lsdkflskdf";
-
-console.log($('body').width());
