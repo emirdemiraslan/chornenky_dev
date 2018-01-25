@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('#{$icomoon-font-path}/icomoon.eot?k645wh');
-  src:  url('#{$icomoon-font-path}/icomoon.eot?k645wh#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/icomoon.ttf?k645wh') format('truetype'),
-    url('#{$icomoon-font-path}/icomoon.woff?k645wh') format('woff'),
-    url('#{$icomoon-font-path}/icomoon.svg?k645wh#icomoon') format('svg');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?n83zgj');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?n83zgj#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/icomoon.ttf?n83zgj') format('truetype'),
+    url('#{$icomoon-font-path}/icomoon.woff?n83zgj') format('woff'),
+    url('#{$icomoon-font-path}/icomoon.svg?n83zgj#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -25,6 +25,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .icon-projects {
   &:before {
     content: $icon-projects;
@@ -73,7 +74,6 @@
 .icon-checkmark-blue {
   &:before {
     content: $icon-checkmark-blue;
-    color: $c_blue;
   }
 }
 .icon-close-button-white {
@@ -104,7 +104,6 @@
 .icon-green-arrow {
   &:before {
     content: $icon-green-arrow;
-    color: $c_brand;
   }
 }
 .icon-home {

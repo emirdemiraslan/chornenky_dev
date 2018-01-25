@@ -1,0 +1,94 @@
+.project_header{
+    position: relative;
+    min-height: 300px;
+    
+}
+.project_header, .project_nav{
+    background-size: cover;
+    background-color: $c_trans_bg_3;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.project_nav{
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    background-position: center 60px;
+    background-color: transparent;
+    text-transform: uppercase;
+    .semi_trans_bg{
+        background-color: $c_trans_bg_3;
+        height: 100%;
+        position: relative;
+    }
+    .semi_trans_bg>*{
+        display: inline-block;
+        height: 60px;
+        line-height: 60px;
+        vertical-align: middle;
+        color: $c_wh;
+    }
+    
+    a{
+        letter-spacing: 0;
+        @include rem(font-size, 1.4rem);
+        font-family: $t_gotham;
+        background-color: $c_trans_bg_3;
+        @include rem(padding, 0 2rem);
+        transition: $quick_tr;
+
+        &:hover{
+            color: $c_brand;
+            background-color: $c_trans_bg_5;
+        }
+    }
+    a.all_projects{
+        .icon-projects{
+            vertical-align: middle;
+            @include rem(font-size, 2.3rem);
+            @include rem(margin-right, 1.8rem);
+
+        }
+
+    }
+    .nav_title{
+        @include rem(font-size, 1.6rem);
+        @include rem(margin,0 1.6rem);
+        letter-spacing: 1px;
+
+    }
+    .project_link{
+        float: right;
+        margin-left:1px; 
+    }
+    
+}
+
+.header_meta{
+    @include centerer("y");
+    @include rem(margin-top, 3rem);
+    @include rem(line-height, 3.2rem);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    &.dark{
+        color: $c_d_gr;
+    }
+    
+    h1{
+        @include rem(font-size,2.8rem);
+        letter-spacing: 1px;
+        color: inherit;
+        margin: 0;
+    }
+    p{
+        @include rem(font-size, 1.8rem);
+        color: inherit;
+        margin: 0;
+        font-weight: 300;
+    }
+    p.type{
+        @include rem(font-size, 1.4rem);
+    }
+}
