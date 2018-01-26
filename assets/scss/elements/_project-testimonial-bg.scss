@@ -1,0 +1,19 @@
+.testimonial_with_full_bg{
+    background-position: 50%;
+    .quote_bg{
+        width: 460px;
+        background-color:#fff;
+        @include rem(padding, 5rem 2.3rem);
+        .client_icon img{
+            max-height: 90px;
+            @include rem(margin-bottom, 3.4rem);
+        }
+        hr{
+            @include rem(margin-top, 3.4rem);
+            border-color: $c_d_gr;
+            color: $c_d_gr;
+            border-width: 1px;
+            width: 60px;
+        }
+    }
+}

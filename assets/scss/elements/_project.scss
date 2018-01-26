@@ -9,13 +9,15 @@
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-position: center;
+    background-clip: content-box;
 }
 .project_nav{
     position: fixed;
     top: 60px;
     width: 100%;
-    background-position: center 60px;
     background-color: transparent;
+    z-index: 99;
+    padding-bottom: 240px;
     text-transform: uppercase;
     .semi_trans_bg{
         background-color: $c_trans_bg_3;
@@ -90,5 +92,19 @@
     }
     p.type{
         @include rem(font-size, 1.4rem);
+    }
+}
+.project_section{
+    .content_block{
+        @include rem(padding, 5rem 0);
+        p{
+            @include rem(margin-bottom,3.8rem);
+            &:last-child{
+                @include rem(margin-bottom,.4rem);
+            }
+        }
+    }
+    h1.title{
+        @include rem(font-size, 2.8rem);
     }
 }

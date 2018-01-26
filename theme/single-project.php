@@ -46,10 +46,8 @@ get_header();
 
     <?php
     if( have_rows('sections') ): while(have_rows('sections')): the_row(); ?>
-        <section class="row no-gutters <?php echo get_row_layout();?>">
+        
             <?php get_template_part( 'elements/project/_'.get_row_layout() ); ?>
-
-        </section>
 
     <?php endwhile; endif;?>
     </article>
