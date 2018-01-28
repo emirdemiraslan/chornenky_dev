@@ -1,7 +1,14 @@
 .testimonial_with_full_bg{
     background-position: 50%;
+    .quote{
+        @include rem(padding, 5rem 0);
+    }
     .quote_bg{
         width: 460px;
+        @include media-breakpoint-down(sm){
+            width: 80%;
+            margin: 0 auto;
+        }
         background-color:#fff;
         @include rem(padding, 5rem 2.3rem);
         .client_icon img{

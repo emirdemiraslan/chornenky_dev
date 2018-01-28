@@ -1,0 +1,8 @@
+.centered_section_with_icon{
+    text-align: center;
+    @include rem(padding, 5rem 0 7rem 0);
+    img{
+        max-height: 80px;
+        @include rem(margin-bottom, 3.2rem);
+    }
+}

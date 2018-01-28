@@ -19,6 +19,7 @@
     z-index: 99;
     padding-bottom: 240px;
     text-transform: uppercase;
+    pointer-events: none;
     .semi_trans_bg{
         background-color: $c_trans_bg_3;
         height: 100%;
@@ -30,6 +31,7 @@
         line-height: 60px;
         vertical-align: middle;
         color: $c_wh;
+        pointer-events: auto;
     }
     
     a{
@@ -43,6 +45,10 @@
         &:hover{
             color: $c_brand;
             background-color: $c_trans_bg_5;
+        }
+        @include media-breakpoint-down(lg){
+            width: 60px;
+            text-align: center;
         }
     }
     a.all_projects{
@@ -95,6 +101,9 @@
     }
 }
 .project_section{
+    @include media-breakpoint-down(md){
+        @include rem(padding, 0 2rem);
+    }
     .content_block{
         @include rem(padding, 5rem 0);
         p{
@@ -102,9 +111,30 @@
             &:last-child{
                 @include rem(margin-bottom,.4rem);
             }
+            @include media-breakpoint-down(md){
+                text-align: left;
+            }
+        }
+        h2.title{
+            @include media-breakpoint-down(md){
+                text-align: left;
+            }
         }
     }
     h1.title{
-        @include rem(font-size, 2.8rem);
+        @include rem(font-size, 2.2rem);
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    &.cta{
+        @include rem(padding, 9rem 0);
+        text-align: center;
+
+        h3{
+            @include rem(font-size, 1.8rem);
+            @include rem(margin, 1.5rem 0 3.5rem 0);
+            color: #A4A7AA;
+            
+        }
     }
 }

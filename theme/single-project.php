@@ -50,6 +50,19 @@ get_header();
             <?php get_template_part( 'elements/project/_'.get_row_layout() ); ?>
 
     <?php endwhile; endif;?>
+
+    <section class="cta project_section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-auto">
+                    <h1 class="title">Like What You See?</h1>
+                    <h3>Let's get started!</h3>
+                    <a href="#" class="button bordered">Reach Out</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
     </article>
 <?php endwhile; endif;?>
 <?php get_footer(); ?>

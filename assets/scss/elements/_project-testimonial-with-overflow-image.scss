@@ -1,0 +1,43 @@
+.testimonial_with_overflow_image{
+    padding: 0;
+    @include media-breakpoint-up(md){
+        background: $c_d_gr;
+    }
+    .container-fluid{
+        overflow: visible;
+    }
+    .overflow_img{
+        position: absolute;
+        max-width: initial;
+        bottom: -1px;
+        left: 0;
+        @include media-breakpoint-down(md){
+            width: 100%;
+        }
+    }
+    .quote{
+        
+        display: flex;
+        position: relative;
+        z-index: 3;
+        &.darkbg {
+            background: $c_d_gr;
+        }
+        @include media-breakpoint-down(sm){
+            height: auto !important;
+            }
+        .quote__wrapper{
+            @include media-breakpoint-down(sm){
+                @include rem(padding, 4rem);
+            }
+            @include rem(padding, 8rem);
+            blockquote{
+                @include rem(font-size, 1.8rem);
+                @include rem(line-height, 2.8rem);
+                &:after, &:before{
+                    color:#2B2E30; 
+                }
+            }
+        }
+    }
+}

@@ -48,6 +48,11 @@ h1{
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+h2{
+    font-family: $t_gotham;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
 h3{
     @include rem(font-size, 2.2rem);

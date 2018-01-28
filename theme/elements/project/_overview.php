@@ -3,9 +3,7 @@
         <div class="row">
             <div class="col">
                 <div class="content_block">
-                    <div class="title">
-                        <h1><?php the_sub_field('title');?></h1>
-                    </div>
+                    <h1 class="title"><?php the_sub_field('title');?></h1>
                     <div class="wysiwyg">
                         <?php the_sub_field('text'); ?>
                     </div>
