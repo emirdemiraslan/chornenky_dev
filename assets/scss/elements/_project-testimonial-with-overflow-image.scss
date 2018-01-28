@@ -1,6 +1,6 @@
 .testimonial_with_overflow_image{
     padding: 0;
-    @include media-breakpoint-up(md){
+    @include media-breakpoint-up(lg){
         background: $c_d_gr;
     }
     .container-fluid{
@@ -13,7 +13,14 @@
         left: 0;
         @include media-breakpoint-down(md){
             width: 100%;
+            position:static;
+            margin-top: -100px;
         }
+    }
+    .col-lg-6{
+        @include media-breakpoint-down(sm){
+            height: auto !important;
+            }
     }
     .quote{
         
@@ -23,9 +30,10 @@
         &.darkbg {
             background: $c_d_gr;
         }
-        @include media-breakpoint-down(sm){
-            height: auto !important;
-            }
+        @include media-breakpoint-down(md){
+            margin-top: -10px;
+        }
+        
         .quote__wrapper{
             @include media-breakpoint-down(sm){
                 @include rem(padding, 4rem);

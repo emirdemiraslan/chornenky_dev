@@ -64,6 +64,20 @@
         @include rem(font-size, 1.6rem);
         @include rem(margin,0 1.6rem);
         letter-spacing: 1px;
+        text-overflow: ellipsis;
+        display: inline-block;
+        word-wrap: break-word;
+        white-space: nowrap;
+        word-break: break-all;
+        max-width: 60%;
+        overflow: hidden;
+        @include media-breakpoint-down(sm){
+            max-width: 50%;
+        }
+        
+        @media (max-width:450px) {
+            max-width: 31%;
+        }
 
     }
     .project_link{

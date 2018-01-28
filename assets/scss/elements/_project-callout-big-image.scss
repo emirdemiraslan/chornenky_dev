@@ -3,12 +3,13 @@
         height: 100%;
         overflow: visible;
     }
+    
     height: 500px;
     @include media-breakpoint-down(sm){
         height: 480px;
     }
     @include media-breakpoint-down(xs){
-        height: 400px;
+        height: 360px;
     }
     background-color: $c_gh_gr;
 
@@ -23,6 +24,9 @@
                 top:-20px !important;
             }
 
+        }
+        @include media-breakpoint-down(xs){
+            max-height: 300px;
         }
     }
 
@@ -48,7 +52,7 @@
             }
         }
         @include media-breakpoint-down(xs){
-            height: 400px;
+            height: 340px;
         }
         
     }
