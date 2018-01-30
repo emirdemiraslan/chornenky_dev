@@ -1,0 +1,85 @@
+.works__title{
+    .content_block{
+        padding: 0;
+        @include rem(margin, 6rem 0 5rem 0);
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        h1{
+            margin: 0;
+        }
+
+    }
+    .works__filter{
+        a{
+
+            color:#A4A7AA;
+            @include rem(font-size, 1.4rem);
+            span{
+                @include rem(font-size, 1rem);
+                @include rem(margin-left, .5rem);
+                color: $c_l_gr;
+                vertical-align: middle;
+                
+            }
+        }
+    }
+}
+
+.work__card{
+    @include rem(margin-bottom,5rem);
+    .img-cover{
+        height: 250px;
+        overflow: hidden;
+        position: relative;
+        @include rem(margin-bottom, 1.5rem);
+    }
+    &--hover{
+        height: inherit;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: rgba(59,62,64,.85);
+        border:1px solid $c_l_gr;
+        position: absolute;
+        top: 0;
+        right: -500px;
+        transition: $quick_tr;
+        h2{
+            @include rem(font-size, 2.2rem);
+            color: $c_brand;
+            opacity: 0;
+            transition: 1s opacity;
+            span{
+                color: #fff;
+                @include rem(font-size, 4rem);
+                vertical-align: middle;
+                @include rem(margin, 0 2.5rem 0 1.5rem);
+            }
+        }
+    }
+    &:hover{
+        .work__card--hover{
+            right: 0;
+            h2{
+                left: 0;
+                opacity: 1;
+            }
+        }
+    }
+    &__title{
+        color:$c_m_gr;
+        @include rem(margin-bottom, 0rem);
+    }
+    &__client{
+        @include rem(margin, 0.5rem 0);
+        @include rem(font-size, 1.8rem);
+        color: #A4A7AA;
+
+    }
+    &__service{
+        color:$c_brand;
+        @include rem(font-size, 1.4rem);
+    }
+}

@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?j4dfun');
+  src:  url('fonts/icomoon.eot?j4dfun#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?j4dfun') format('truetype'),
+    url('fonts/icomoon.woff?j4dfun') format('woff'),
+    url('fonts/icomoon.svg?j4dfun#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-triangle-down:before {
+  content: "\e919";
+  color: #777c7f;
+}
+.icon-projects:before {
+  content: "\e918";
+  color: #fff;
+}
+.icon-pin .path1:before {
+  content: "\e907";
+  color: rgb(87, 169, 0);
+}
+.icon-pin .path2:before {
+  content: "\e915";
+  margin-left: -0.755859375em;
+  color: rgb(254, 254, 254);
+}
+.icon-pin .path3:before {
+  content: "\e916";
+  margin-left: -0.755859375em;
+  color: rgb(254, 254, 254);
+}
+.icon-error:before {
+  content: "\e912";
+  color: #57a900;
+}
+.icon-ac-icon-red:before {
+  content: "\e913";
+  color: #af2127;
+}
+.icon-arrow-circle-right:before {
+  content: "\e900";
+  color: #fff;
+}
+.icon-arrow-down:before {
+  content: "\e901";
+  color: #777c7f;
+}
+.icon-checkmark-blue:before {
+  content: "\e902";
+  color: #006890;
+}
+.icon-close-button-white:before {
+  content: "\e914";
+  color: #fff;
+}
+.icon-creative-design:before {
+  content: "\e903";
+  color: #a4a7aa;
+}
+.icon-development:before {
+  content: "\e904";
+  color: #a4a7aa;
+}
+.icon-devices:before {
+  content: "\e905";
+  color: #4fa438;
+}
+.icon-facebook:before {
+  content: "\e906";
+  color: #a4a7aa;
+}
+.icon-green-arrow:before {
+  content: "\e917";
+  color: #57a900;
+}
+.icon-home:before {
+  content: "\e908";
+  color: #fff;
+}
+.icon-instagram:before {
+  content: "\e909";
+  color: #a4a7aa;
+}
+.icon-logo-white:before {
+  content: "\e90a";
+  color: #fefefe;
+}
+.icon-menu:before {
+  content: "\e911";
+}
+.icon-programming:before {
+  content: "\e90b";
+  color: #57a900;
+}
+.icon-quality-assurance:before {
+  content: "\e90c";
+  color: #a4a7aa;
+}
+.icon-small-arrow-left:before {
+  content: "\e90d";
+  color: #fff;
+}
+.icon-small-arrow-right:before {
+  content: "\e90e";
+  color: #fff;
+}
+.icon-touch:before {
+  content: "\e90f";
+  color: #4fa438;
+}
+.icon-twitter:before {
+  content: "\e910";
+  color: #a4a7aa;
+}
