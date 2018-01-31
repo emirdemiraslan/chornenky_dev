@@ -44,7 +44,7 @@
         border:1px solid $c_l_gr;
         position: absolute;
         top: 0;
-        right: -500px;
+        right: -100%;
         transition: $quick_tr;
         h2{
             @include rem(font-size, 2.2rem);
