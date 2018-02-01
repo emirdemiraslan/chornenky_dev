@@ -61,6 +61,7 @@ get_header();
     });
     google.maps.event.addDomListener(window, 'resize', function() {
         map.setCenter(center);
+        map.panBy(0,-100);
     });
 
     function map_recenter(map,latlng,offsetx,offsety) {
@@ -76,6 +77,7 @@ get_header();
             point1.y + point2.y
         )));
     }
+    
     google.maps.event.addListenerOnce(map,"projection_changed", function() {
         map_recenter(map, center, 0, -100);
     });
