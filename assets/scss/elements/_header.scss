@@ -3,6 +3,9 @@
     .top{
         box-shadow: 0 0 5px 0px rgba(0,0,0,.1);
     }
+    & + main, & + article{
+        padding-top: 60px;
+    }
 
 }
 header.sticky {
