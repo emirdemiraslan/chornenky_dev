@@ -8,6 +8,10 @@ html, body, p{
 p{
     @include rem(margin, 0 0 1rem 0 );
 }
+hr{
+    border-style: solid;
+    border-color: #fff;
+}
 li{
     color: $ca_2nd_txt;
 }
@@ -127,6 +131,7 @@ blockquote{
             font-style: normal;
             font-weight: 700;
             @include rem(font-size, 1.4rem);
+            @include rem(margin-top, 1.4rem);
             
         }
 }
@@ -139,7 +144,8 @@ blockquote{
     @include rem(padding, 5rem 0);
 }
 .button{
-    color: $c_d_gr;
+    
+    background: $c_brand;
     text-transform: uppercase;
     display: inline-block;
     text-align: center;
@@ -149,15 +155,19 @@ blockquote{
     letter-spacing: 0;
     font-weight: bold; 
     transition: $quick_tr ;
+    background: $c_brand;
+    border: 1px solid $c_wh;
+    color: $c_wh;
 
     &.bordered{
         border: 1px solid $c_brand;
 
     }
     &:hover{
-        background: $c_brand;
-        color: $c_wh;
-        border: 1px solid $c_wh;
+        background: transparent;
+        color: $c_d_gr;
+        border: 1px solid $c_brand;
+       
 
     }
 }

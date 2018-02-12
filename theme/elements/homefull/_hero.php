@@ -2,9 +2,11 @@
     <div class="row no-gutters">
         <div class="col-lg-6 col-md-12">
             <div class="gradient_cta darkbg">
-                <h3>We are Chornenky Creative,<br/>a digital design agency</h3>
-                <hr>
-                <h1>We Create Kick-Ass Advertising Content</h1>
+                <div class="slogan">
+                    <h3>We are Chornenky Creative,<br/>a digital design agency</h3>
+                    <hr>
+                    <h1>We Create Kick-Ass Advertising Content</h1>
+                </div>
                 <div class="quote">
                     <div class="quote__wrapper">
                         <blockquote>Justin and his small and talented agency are one of our "go-tos" these days…</blockquote>

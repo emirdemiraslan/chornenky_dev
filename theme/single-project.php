@@ -10,11 +10,11 @@ get_header();
             <nav class="project_nav" style="background-image:url(<?php the_post_thumbnail_url( 'full' ); ?>)">
                 <div class="semi_trans_bg">
 
-                    <a href="/projects" class="all_projects">
+                    <a href="<?php echo get_permalink( get_page_by_path( 'work' ) ); ?>" class="all_projects">
                         <span class="icon-projects"></span>
                         <span class="hidden-lg-down">All Projects</span>
                     </a>
-                    <h1 class="nav_title"><?php the_title(); ?></h1>
+                    <!--<h1 class="nav_title"><?php the_title(); ?></h1>-->
                     <?php $next_post = get_next_post();
                         if (!empty( $next_post )): ?>
                     <a class="project_link next" href="<?php echo esc_url( get_permalink( $next_post->ID ) ); ?>">
