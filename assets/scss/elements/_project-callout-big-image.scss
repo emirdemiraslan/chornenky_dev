@@ -37,6 +37,7 @@
         height: 500px;
         p{
             @include rem(font-size, 2.8rem);
+            @include rem(line-height, 3.8rem);
             @include rem(padding-right, 2.8rem);
         }
         @include media-breakpoint-down(md){

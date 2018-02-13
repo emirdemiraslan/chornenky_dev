@@ -31,6 +31,9 @@
     hr{
         width: 60px;
          @include rem(margin, 0 0 2rem 0);
+         @include media-breakpoint-down(md){
+             @include rem(margin, 2rem auto);
+         }
     }
     h1{
         max-width: 520px;
@@ -80,10 +83,14 @@
 }
 .toDown{
     @include circle(88px, $c_wh);
-    border: 1px solid #E5E5E5;
+    border: 2px solid #E5E5E5;
     @include centerer("x");
-    bottom: 20px;
+    bottom: 145px;
+    z-index: 3;
     transition:$quick_tr;
+    @include media-breakpoint-down(md){
+        bottom: 110px;
+    }
 
     .oval{
         @include circle(34px, $c_wh);
@@ -100,8 +107,11 @@
         }
     }
     &:hover{
-         box-shadow: 0px 0px 10px 4px rgba($color: #000000, $alpha: .2);
-         bottom:15px; 
+         box-shadow: 0px 0px 12px 2px rgba($color: #000000, $alpha: .1);
+         bottom:140px; 
+         @include media-breakpoint-down(md){
+            bottom: 105px;
+        }
          .oval{
              //background-color:$c_l_gr;
              

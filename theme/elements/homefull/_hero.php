@@ -20,11 +20,7 @@
             <div class="img-cover" style="background-image:url(<?php echo get_template_directory_uri();?>/assets/img/home-hero-bg.jpg);"></div>
         </div>
     </div>
-    <button id="toDown" data-target="#clients" class="toDown">
-        <span class="oval">
-            <span class="downArrow"></span>
-        </span>
-    </button>
+    
     <script>
 
     </script>

@@ -17,7 +17,7 @@
     </div>
     <div class="row cta justify-content-center align-items-center">
         <div class="col-auto">
-            <a href="#" class="button bordered">check out our work</a>
+            <a href="<?php echo get_permalink( get_page_by_path( 'work' ) ); ?>" class="button bordered">check out our work</a>
         </div>
     </div>
 </div>

@@ -27,6 +27,8 @@ header.sticky {
     font-family: $t_brand;
     @include rem(font-size, 1.8rem);
     color: $c_d_gr;
+    position: relative;
+    top:4px;
 }
 .nav{
     

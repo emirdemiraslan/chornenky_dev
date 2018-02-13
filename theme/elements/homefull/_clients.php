@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="row align-items-end justify-content-between clients__wrapper clients--first">
+    <div class="row align-items-center justify-content-between clients__wrapper clients--first">
         <div class="col clients__client">
             <img src="<?php echo get_template_directory_uri();?>/assets/img/rskies-logo@2X.png" alt="rskies">
         </div>
@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    <div class="row align-items-start justify-content-between clients__wrapper clients--second">
+    <div class="row align-items-center justify-content-between clients__wrapper clients--second">
         <div class="col clients__client">
             <img src="<?php echo get_template_directory_uri();?>/assets/img/spacetime-logo@2X.png" alt="rskies">
         </div>

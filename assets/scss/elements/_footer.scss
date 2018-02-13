@@ -57,6 +57,9 @@
         @include media-breakpoint-down(sm) {
             order:-1;
         }
+        .brand__logo{
+            margin: 0;
+        }
     }
 
     .copyright{

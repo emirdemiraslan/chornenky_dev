@@ -130,6 +130,7 @@
             @include media-breakpoint-down(md){
                 text-align: left;
             }
+            padding: 0;
         }
         h2.title{
             @include media-breakpoint-down(md){

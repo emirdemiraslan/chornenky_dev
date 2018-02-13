@@ -27,6 +27,7 @@ import 'glob:../img/**/*.{gif,ico,jpg,jpeg,png,webp}';
  * sass
  *
  */
+
 import '../scss/main.scss';
 /**
  * Import
@@ -40,6 +41,7 @@ import 'glob:../svg/**/*.svg';
  * here...
  */
 
+import './vendor/scrolloverflow.min';
 import './scripts/fullHomepage';
 
 // silly example:

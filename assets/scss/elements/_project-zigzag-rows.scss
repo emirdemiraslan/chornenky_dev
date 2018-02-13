@@ -7,6 +7,11 @@
     h1.title{
         @include rem(margin-bottom, 7rem);
     }
+    .zig_zag_row{
+        img{
+            @include rem(margin-top, 2.5rem);
+        }
+    }
     .row.zig_zag_row:nth-child(2n+1) {
         flex-direction: row-reverse;
     }

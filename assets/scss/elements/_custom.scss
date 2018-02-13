@@ -12,6 +12,9 @@ hr{
     border-style: solid;
     border-color: #fff;
 }
+*:focus{
+    outline: none;
+}
 li{
     color: $ca_2nd_txt;
 }
@@ -43,6 +46,7 @@ section{
 }
 a{
     text-decoration: none;
+    
     
 }
 h1{
@@ -191,5 +195,4 @@ blockquote{
         background-position: right center;
     }
 }
-
 

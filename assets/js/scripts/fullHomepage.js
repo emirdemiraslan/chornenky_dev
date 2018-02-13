@@ -16,15 +16,15 @@ var running = 0;
         //resize sections
         function resizeSections(){
             var scale = $('.brands .fp-tableCell').height() / 700;
+            if(scale > 1) scale = 1;
             $('.scalable .fp-tableCell').css({
                 transform: 'scale(' + scale + ')'
                 
             })
-            $('.scalable .fp-tableCell .container-fluid').css({
+            $('.scalable.brands .fp-tableCell .container-fluid').css({
                 width:100/scale+'%',
                 position:'relative',
                 left: (100-100/scale)/2+'%'
-
             })
         }
 
@@ -35,6 +35,7 @@ var running = 0;
             paddingBottom:'124px',
             afterRender:resizeSections,
             afterResize: resizeSections,
+            scrollOverflow: true,
             onLeave: function (index, nextIndex, direction) {
                 
                 
@@ -60,6 +61,12 @@ var running = 0;
 
                     }
                     return false;
+                }
+                if (nextIndex == 5){
+                    $('#toDown').fadeOut();
+                }
+                else {
+                    $('#toDown').fadeIn();
                 }
                 
             }
@@ -136,10 +143,10 @@ var running = 0;
         }, 0.2);
 
         //set down button in hero section
-        $('[data-target^="#"]').click(function (e) {
+        $('#toDown').click(function (e) {
             e.preventDefault();
-            var target = $(e.currentTarget).data('target');
-            $.fn.fullpage.moveTo(2);
+            //var target = $(e.currentTarget).data('target');
+            $.fn.fullpage.moveSectionDown()
             //$.fn.fullpage.moveTo(target);
             //$(window).scrollTo($(target), 500, { offset: -60 });
 
