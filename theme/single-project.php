@@ -57,7 +57,7 @@ get_header();
                 <div class="col-auto">
                     <h1 class="title">Like What You See?</h1>
                     <h3>Let's get started!</h3>
-                    <a href="#" class="button bordered">Reach Out</a>
+                    <a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>" class="button bordered">Reach Out</a>
                 </div>
             </div>
         </div>

@@ -25,7 +25,7 @@
 		align-items: center;
 		justify-content: center;
 		position: absolute;
-		z-index:100;
+		z-index:101;
 		background-color: #3B3E40;
 		-webkit-transition: 1s cubic-bezier(0.190, 1.000, 0.220, 1.000);
 		-moz-transition: 1s cubic-bezier(0.190, 1.000, 0.220, 1.000);
@@ -109,7 +109,7 @@
 		<h2>MENU</h2>
 		<a class="close_btn" href="javascript:void(0);"><div class="icon-close-button-white"></div></a>
 	</div>
-	<div class="mobilemenu__body">
+	<div class="mobilemenu__body nav">
 		<?php MOZ_Menu::nav_menu('primary'); ?>
 	</div>
 </div>

@@ -25,6 +25,9 @@ li{
 .container{
     padding: 0;
     margin: auto;
+    @include media-breakpoint-down(md){
+        padding: 0 15px;
+    }
 }
 section.fixed{
     position: fixed;
@@ -111,6 +114,9 @@ blockquote{
                 z-index: -1;
                 @include rem(top, 0.3rem);
                 @include rem(left, 1rem);
+                @include media-breakpoint-down(md){
+                    @include rem(font-size,9rem);
+                }
                 
 
             }
@@ -127,6 +133,9 @@ blockquote{
                 @include rem(bottom, 1rem);
                 @include rem(right, 1rem);
                 transform: rotateZ(180deg);
+                @include media-breakpoint-down(md){
+                    @include rem(font-size,9rem);
+                }
 
             }
         }

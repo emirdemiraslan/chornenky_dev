@@ -45,6 +45,7 @@
 .icon-checkmark-blue {
   &:before {
     content: $icon-checkmark-blue; 
+    color: #006890;
   }
 }
 .icon-creative-design {
@@ -145,6 +146,7 @@
 .icon-green-arrow {
   &:before {
     content: $icon-green-arrow; 
+    color: $c_brand;
   }
 }
 .icon-projects {

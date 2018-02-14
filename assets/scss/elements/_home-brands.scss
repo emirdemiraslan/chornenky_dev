@@ -8,6 +8,9 @@
 
         img{
             max-height: 70px;
+            @include media-breakpoint-down(md){
+                max-height: 40px;
+            }
         }
     }
 }
@@ -16,8 +19,10 @@
     //@include rem(padding,8rem 0);
     .headline h1{
         @include rem(margin,4rem 0);
-        @include media-breakpoint-down(sm){
-            font-size: 6vw;
+        @include media-breakpoint-down(md){
+            font-size: 4.6vw;
+            line-height: 133%;
+            margin:3vh 0;
         }
     }
 }

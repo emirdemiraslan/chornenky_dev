@@ -26,16 +26,17 @@
     bottom: 0;
     width: 100%;
 }
+
 @include media-breakpoint-down(md){
     
     .fp-tableCell{
         
-        display: block;
+       
         overflow-y: auto;
         overflow-x:hidden;
         .clients & {
 
-            transform: scale(.9) !important;
+            transform: scale(1) !important;
         }
         .brands & {
             transform: scale(1) !important;

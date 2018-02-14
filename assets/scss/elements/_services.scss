@@ -9,6 +9,9 @@
     h1{
         @include rem(font-size, 2.8rem);
         @include rem(line-height, 3.2rem);
+        @include media-breakpoint-down(md){
+            font-size: 5.5vw;
+        }
     }
     p{
         @include rem(font-size, 1.8rem);

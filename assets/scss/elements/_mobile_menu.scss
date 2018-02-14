@@ -39,8 +39,26 @@
         }
     }
     &__body{
-        background-color: $c_wh;
+        
         @include rem(padding, 2.2rem);
+        .menu{
+            &__list{
+                padding: 0;
+                display: block;
+            }
+            &__item{
+                margin: 0 !important;
+                @include rem(padding, 3rem 0);
+                border-bottom:1px solid $c_gh_gr;
+                height: auto !important;
+                .menu__link{
+                    @include rem(font-size, 1.6rem);
+                    @include rem(line-height, 1.6rem);
+                    padding: 0;
+                    text-transform: uppercase;
+                }
+            }
+        }
 
     }
 }
