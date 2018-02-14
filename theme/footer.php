@@ -13,19 +13,19 @@
             <div class="col">
                 <div class="container">
                     <div class="row justify-content-between align-items-center">
-                        <div class="col-md-auto col-sm-12 ">
+                        <div class="col-md-5 col-sm-12 ">
                             <div class="copyright">
                                 Copyright © Chornenky Creative 2017-18. All Rights Reserved.
                             </div>
                         </div>
-                        <div class="col-md-auto col-sm-12 footer-logo">
+                        <div class="col-md-2 col-sm-12 footer-logo">
                             
                                 <span class="brand__logo">
                                     <?php MOZ_SVG::svg('logo-white'); ?>
                                 </span>
                             
                         </div>
-                        <div class="col-md-auto col-sm-12 nav">
+                        <div class="col-md-5 col-sm-12 nav">
                             <div class="nav--footer nav--desktop">
                                 <?php MOZ_Menu::nav_menu('primary'); ?>
                             </div>
