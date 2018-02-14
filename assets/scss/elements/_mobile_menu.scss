@@ -1,0 +1,62 @@
+.mobilemenu{
+    position: fixed;
+    width:100%;
+    height: 100%;
+    left:-100%;
+    top:0;
+    z-index: 100;
+    background-color: $c_wh;
+    transition: $quick_tr;
+    &.opened{
+        left: 0;
+    }
+
+    &__head{
+        background-color: $c_brand;
+        position: relative;
+        @include rem(padding, 2.2rem);
+        h2{
+            @include rem(font-size, 1.6rem);
+            @include rem(line-height, 1.6rem);
+            margin: 0;
+            color: $c_wh;
+        }
+        .close_btn{
+            width:60px;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-left:1px solid $c_wh;
+            color: $c_wh;
+            .icon-close-button{
+                color:$c_wh;
+                @include rem(font-size, 1.3rem);
+            }
+        }
+    }
+    &__body{
+        background-color: $c_wh;
+        @include rem(padding, 2.2rem);
+
+    }
+}
+
+.mobile_open{
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    right:0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid #ececec;
+    color: $c_l_gr;
+    .icon-menu-button{
+        font-size: 18px;
+    }
+}

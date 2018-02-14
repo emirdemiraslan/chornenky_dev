@@ -43,6 +43,7 @@ import 'glob:../svg/**/*.svg';
 
 import './vendor/scrolloverflow.min';
 import './scripts/fullHomepage';
+import './scripts/mobilemenu';
 
 // silly example:
 // import obj from './scripts/example';

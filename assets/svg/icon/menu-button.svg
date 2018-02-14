@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="15px" viewBox="0 0 20 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/menu-button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="menu/nav-bar-white-mobile" transform="translate(-335.000000, -23.000000)" fill="#777C7F">
+            <g id="icon/menu-button" transform="translate(336.000000, 23.000000)">
+                <g id="menu-to-arrow-right-3" transform="translate(-1.000000, -1.000000)">
+                    <g id="Group" transform="translate(10.136364, 7.681818) rotate(180.000000) translate(-10.136364, -7.681818) translate(0.136364, 0.681818)" fill-rule="nonzero">
+                        <polygon id="Shape" points="0.5 0.5 19.3181818 0.5 19.3181818 -0.5 0.5 -0.5"></polygon>
+                        <polygon id="Shape" points="0.5 6.86363636 19.3181818 6.86363636 19.3181818 5.86363636 0.5 5.86363636"></polygon>
+                        <polygon id="Shape" points="0.5 13.2272727 19.3181818 13.2272727 19.3181818 12.2272727 0.5 12.2272727"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

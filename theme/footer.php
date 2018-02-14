@@ -63,6 +63,54 @@
 <?php wp_footer(); ?>
 
 <?php // </body> opens in header.php ?>
+<script>
+		(function(){
+            
+//			window.onload = function onLoad() {
+				var circle = new ProgressBar.Circle('#progress_circle', {
+					color: '#57A900',
+					trailColor: '#686D71',
+					strokeWidth: 3,
+					duration: 2500,
+					easing: 'easeInOut'
+				});
+			
+			circle.set(0.05);
+			function id(v){ return document.getElementById(v); }
+			function loadbar() {
+				var img = document.images,
+					container = id('loading_container'),
+					c = 0,
+					tot = img.length;
+                if(tot == 0) return doneLoading();
+
+				function imgLoaded(){
+					c += 1;
+					var perc = (1/tot*c);
+					circle.animate(perc);
+					//stat.innerHTML = "Loading "+ perc;
+
+					if(c===tot) return doneLoading();
+				}
+				function doneLoading(){
+                    console.log('done loading');
+					container.classList.remove('loading');
+					container.classList.add('loaded');
+				
+				}
+				for(var i=0; i<tot; i++) {
+					var tImg     = new Image();
+					tImg.onload  = imgLoaded;
+					tImg.onerror = imgLoaded;
+					tImg.src     = img[i].src;
+				}    
+			}
+            document.addEventListener('DOMContentLoaded', loadbar, false);
+//        }
+		}());
+		
+	
+	</script>
 </body>
 </html>
 <?php

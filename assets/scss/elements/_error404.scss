@@ -8,13 +8,19 @@
         .icon-error{
             font-size: 127px;
             color: $c_brand;
+            @include rem(margin-bottom, 5.7rem);
+        }
+        h1{
+
+            @include rem(margin-bottom, 2.1rem);
         }
         h1, h3, a, div {
             text-align: center;
-            @include rem(margin-bottom, 3rem);
         }
+
         h3{
             @include rem(font-size, 2.8);
+            @include rem(margin-bottom, 6.1rem);
         }
     }
 }
