@@ -44,9 +44,11 @@
                 @include rem(padding, 0 1.7rem);
                 border-right: 1px solid $c_wh;
                 text-align: center;
+                border-bottom: none;
 
                 &:hover{
                     border-right: 1px solid $c_wh;
+                    border-bottom: none;
                     
                 }
             }

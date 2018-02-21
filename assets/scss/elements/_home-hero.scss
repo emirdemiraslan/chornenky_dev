@@ -13,6 +13,7 @@
 .gradient_cta{
     background-image: linear-gradient(314.97deg, #57A900 1%, #57A900 1.82%, #57A900 3.01%, #006890 99.9%);
     margin: 0;
+    border-right: 1px solid #fff;
     position: relative;
     @include rem(padding, 6.5rem 2.5rem);
     box-sizing: border-box;
@@ -25,7 +26,8 @@
     }
 
     @include media-breakpoint-down(md){
-        align-items: center
+        align-items: center;
+        border-right: none;
     }
 
     hr{

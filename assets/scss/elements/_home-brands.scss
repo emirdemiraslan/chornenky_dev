@@ -8,8 +8,14 @@
 
         img{
             max-height: 70px;
+            #clients &{
+                max-height: 100px;
+            }
             @include media-breakpoint-down(md){
                 max-height: 40px;
+                #clients &{
+                    max-height: 70px;
+                }
             }
         }
     }

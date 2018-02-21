@@ -12,6 +12,9 @@ var running = 0;
         //set marquees for brand logos
         marquee('right', 20, $('#first__brand__row')[0]);
         marquee('left', 10, $('#second__brand__row')[0]);
+        marquee('left', 20, $('#first__client__row')[0]);
+        marquee('right', 10, $('#second__client__row')[0]);
+        
 
         //resize sections
         function resizeSections(){
@@ -41,6 +44,7 @@ var running = 0;
                 
 
                 //after leaving section 2
+                
                 if (index == 2 && nextIndex == 3) {
                     //alert("Going to section 3!");
                     if(running<1){
@@ -89,7 +93,7 @@ var running = 0;
                 brandsInTween.play();
             }
         })
-            .to('.clients--first', 0.5, {
+            .to('.clients--top', 0.5, {
                 x: "+=1000px",
                 filter: "blur(2px)",
                 ease: default_ease,
@@ -102,7 +106,7 @@ var running = 0;
                 alpha: 0
 
             }, 0.3)
-            .to('.clients--second', 0.5, {
+            .to('.clients--bottom', 0.5, {
                 x: "-=1000px",
                 filter: "blur(2px)",
                 ease: default_ease,
@@ -110,6 +114,7 @@ var running = 0;
 
             }, 0.2);
         
+
         var brandsInTween = new TimelineLite({
             paused:true,
             onReverseComplete:function(){
