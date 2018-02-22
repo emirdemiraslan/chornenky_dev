@@ -43,27 +43,14 @@
     <div id ="first__client__row" class="marquee">
         <div class="marquee__wrapper">
             <div class="row justify-content-around align-items-center brands__wrapper">
-                <div class=" brands__brand">
-                    
-                        <img src="<?php echo get_template_directory_uri();?>/assets/img/rskies-logo@2X.png" alt="rskies">
-                    
+                <?php 
+                $top_clients = get_field('top_row');
+                //print_r($top_clients);
+                foreach($top_clients as $client):?>
+                <div class="brands__brand">
+                    <img src="<?php echo $client['url']; ?>" alt="<?php echo $client['title']; ?>" />
                 </div>
-                <div class=" brands__brand">
-                    
-                        <img src="<?php echo get_template_directory_uri();?>/assets/img/ubisoft-logo@2X.png" alt="rskies">
-                    
-                </div>
-                <div class=" brands__brand">
-                    
-                        <img src="<?php echo get_template_directory_uri();?>/assets/img/playboy-logo@2X.png" alt="rskies">
-                    
-                </div>
-                <div class=" brands__brand">
-                    
-                        <img src="<?php echo get_template_directory_uri();?>/assets/img/amazon-logo@2X.png" alt="rskies">
-                    
-                </div>
-                
+                <?php endforeach;?>
             </div>
         </div>
     </div>
@@ -71,7 +58,7 @@
 <div class="container clients--headline">
     <div class="row headline">
         <div class="col">
-            <h1>for clients like these</h1>
+            <h1><?php the_field('clients_headline'); ?></h1>
         </div>
     </div>
 </div>
@@ -79,29 +66,14 @@
     <div id ="second__client__row" class="marquee">
         <div class="marquee__wrapper">
             <div class="row justify-content-around align-items-center brands__wrapper">
-                <div class=" brands__brand">
-                    
-                        <img src="<?php echo get_template_directory_uri();?>/assets/img/spacetime-logo@2X.png" alt="rskies">
-                    
+                <?php 
+                $bottom_clients = get_field('bottom_row');
+                foreach($bottom_clients as $client):?>
+                <div class="brands__brand">
+                    <img src="<?php echo $client['url']; ?>" alt="<?php echo $client['title']; ?>" />
                 </div>
-                <div class=" brands__brand">
-                    
-                        <img src="<?php echo get_template_directory_uri();?>/assets/img/aspen-logo@2X.png" alt="rskies">
-                    
-                </div>
-                <div class=" brands__brand">
-                    
-                        <img src="<?php echo get_template_directory_uri();?>/assets/img/adon-network-logo@2X.png" alt="rskies">
-                    
-                </div>
-                <div class=" brands__brand">
-                    
-                        <img src="<?php echo get_template_directory_uri();?>/assets/img/oconner-logo@2X.png" alt="rskies">
-                    
-                </div>
-                
+                <?php endforeach;?>
             </div>
-
         </div>
     </div>
 </div>

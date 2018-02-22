@@ -24,7 +24,7 @@ var running = 0;
                 transform: 'scale(' + scale + ')'
                 
             })
-            $('.scalable.brands .fp-tableCell .container-fluid').css({
+            $('.scalable.brands .fp-tableCell .container-fluid, .scalable.clients .fp-tableCell .container-fluid').css({
                 width:100/scale+'%',
                 position:'relative',
                 left: (100-100/scale)/2+'%'
