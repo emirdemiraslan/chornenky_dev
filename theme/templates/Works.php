@@ -7,7 +7,9 @@ get_header();
 // args
 $args = array(
 	'numberposts'	=> -1,
-	'post_type'		=> 'project'
+    'post_type'		=> 'project',
+    'orderby'       => 'ID',
+    'order'         => 'DESC'
 );
 
 
@@ -24,9 +26,11 @@ $the_query = new WP_Query( $args );
                     <div class="page_title">
                         <h1>OUR WORK</h1>
                     </div>
+                    <!--
                     <div class="works__filter">
                         <a href="#">Most Recent <span class="icon-triangle-down"></span> </a>
                     </div>
+                    -->
                 </div>
             </div>
         </div>

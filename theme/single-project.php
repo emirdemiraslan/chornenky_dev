@@ -3,8 +3,16 @@
 * Project
 */
 get_header(); 
+
+//$query = new WP_Query( array( 'post_type' => 'project', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => -1 ) );
 ?>
  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+ <?php
+ $projects = get_posts( array( 'post_type' => 'project', 'orderby' => 'ID', 'order' => 'DESC', 'posts_per_page' => -1 ) );
+ $firstPost =  $projects[count($projects)-1];// first post
+ $lastPost  = $projects[0]; // Last post
+
+ ?>
     <article class="project">
         <header class="project_header" style="background-image:url(<?php the_post_thumbnail_url( 'full' ); ?>)">
             <nav class="project_nav" style="background-image:url(<?php the_post_thumbnail_url( 'full' ); ?>)">
@@ -15,20 +23,20 @@ get_header();
                         <span class="hidden-lg-down">All Projects</span>
                     </a>
                     <!--<h1 class="nav_title"><?php the_title(); ?></h1>-->
-                    <?php $next_post = get_next_post();
-                        if (!empty( $next_post )): ?>
+                    <?php $next_post = empty(get_previous_post()) ? $lastPost : get_previous_post();
+                    ?>
                     <a class="project_link next" href="<?php echo esc_url( get_permalink( $next_post->ID ) ); ?>">
                             <span class="hidden-lg-down">Next Project</span>
                             <span class="icon-small-arrow-right"></span>
-                        </a>
-                    <?php endif; ?>
-                    <?php $prev_post = get_previous_post();
-                     if (!empty( $prev_post )): ?>
+                    </a>
+                    
+                    <?php $prev_post = empty(get_next_post()) ? $firstPost : get_next_post() ; 
+                     ?>
                     <a class="project_link prev" href="<?php echo esc_url( get_permalink( $prev_post->ID ) ); ?>">
                             <span class="icon-small-arrow-left"></span>
                             <span class="hidden-lg-down">Previous Project</span>
                         </a>
-                    <?php endif; ?>
+                    
                 </div>
             </nav>
             <div class="header_meta <?php if(get_field('dark_text_color')) echo 'dark';?>">

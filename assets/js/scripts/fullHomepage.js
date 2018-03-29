@@ -12,8 +12,8 @@ var running = 0;
         //set marquees for brand logos
         marquee('right', 20, $('#first__brand__row')[0]);
         marquee('left', 10, $('#second__brand__row')[0]);
-        marquee('left', 20, $('#first__client__row')[0]);
-        marquee('right', 10, $('#second__client__row')[0]);
+        marquee('right', 20, $('#first__client__row')[0]);
+        marquee('left', 10, $('#second__client__row')[0]);
         
 
         //resize sections
@@ -93,6 +93,12 @@ var running = 0;
                 brandsInTween.play();
             }
         })
+        .to('#clients', 0.5, {
+            x: "+=1500px",
+            filter : "blur(2px)",
+            ease : default_ease,
+            alpha : 0
+        })/*
             .to('.clients--top', 0.5, {
                 x: "+=1000px",
                 filter: "blur(2px)",
@@ -112,7 +118,7 @@ var running = 0;
                 ease: default_ease,
                 alpha: 0
 
-            }, 0.2);
+            }, 0.2);*/
         
 
         var brandsInTween = new TimelineLite({
@@ -128,6 +134,13 @@ var running = 0;
                 
             }
         })
+        .from('#brands', 0.5, {
+            x : "-=1500px",
+            filter : "blur(2px)",
+            ease : default_ease,
+            alpha : 0
+        })
+        /*
         .from('#brands .brands--top', 0.5, {
             x: "-=1000px",
             filter: "blur(2px)",
@@ -145,7 +158,7 @@ var running = 0;
             filter: "blur(2px)",
             ease: default_ease,
             alpha: 0
-        }, 0.2);
+        }, 0.2);*/
 
         //set down button in hero section
         $('#toDown').click(function (e) {

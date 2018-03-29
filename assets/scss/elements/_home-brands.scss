@@ -1,7 +1,7 @@
 .brands__wrapper{
     text-align: center;
     .brands__brand{
-        @include rem(padding, 2rem 2rem);
+        //@include rem(padding, 2rem 2rem);
         @include media-breakpoint-down(md) { 
             @include rem(padding, 1rem 0rem);
          }
