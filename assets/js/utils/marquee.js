@@ -13,7 +13,7 @@ export function marquee(_dir, _dur, _div) {
 
     function updateScreen() {
         _div.css({'width': window.innerWidth*2});
-        _wrapper.css({'display': 'inline-block', width: 1140});
+        _wrapper.css({'display': 'inline-block', width: 'auto'});
     }
 
     function init() {

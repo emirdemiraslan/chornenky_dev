@@ -9,6 +9,19 @@ var headline_ease = SlowMo.easeInOut;
 var running = 0;
     $(document).ready(function(e){
 
+        //set width of clients row
+        var clients_top_width = 0;
+        var clients_bottom_width = 0;
+        $('.clients--top .clients__client').each(function (i) {
+            clients_top_width += $(this).outerWidth(true) + 30;
+        });
+        var clients_bottom_width = 100;
+        $('.clients--bottom .clients__client').each(function (i) {
+            clients_bottom_width += $(this).outerWidth(true) + 30;
+        });
+        $('#first__client__row .clients__wrapper').css({ width: clients_top_width + 'px' });
+        $('#second__client__row .clients__wrapper').css({ width: clients_bottom_width + 'px' });
+
         //set marquees for brand logos
         marquee('right', 20, $('#first__brand__row')[0]);
         marquee('left', 10, $('#second__brand__row')[0]);
@@ -20,10 +33,13 @@ var running = 0;
         function resizeSections(){
             var scale = $('.brands .fp-tableCell').height() / 700;
             if(scale > 1) scale = 1;
+
+            
+
             $('.scalable .fp-tableCell').css({
                 transform: 'scale(' + scale + ')'
                 
-            })
+            });
             $('.scalable.brands .fp-tableCell .container-fluid, .scalable.clients .fp-tableCell .container-fluid').css({
                 width:100/scale+'%',
                 position:'relative',

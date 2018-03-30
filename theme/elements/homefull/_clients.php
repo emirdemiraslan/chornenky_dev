@@ -42,12 +42,12 @@
 <div class="container-fluid clients--top">
     <div id ="first__client__row" class="marquee">
         <div class="marquee__wrapper">
-            <div class="row justify-content-around align-items-center brands__wrapper">
+            <div class="row justify-content-around align-items-center clients__wrapper">
                 <?php 
                 $top_clients = get_field('top_row');
                 //print_r($top_clients);
                 foreach($top_clients as $client):?>
-                <div class="brands__brand">
+                <div class="clients__client">
                     <img src="<?php echo $client['url']; ?>" alt="<?php echo $client['title']; ?>" />
                 </div>
                 <?php endforeach;?>
@@ -65,11 +65,11 @@
 <div class="container-fluid clients--bottom">
     <div id ="second__client__row" class="marquee">
         <div class="marquee__wrapper">
-            <div class="row justify-content-around align-items-center brands__wrapper">
+            <div class="row justify-content-around align-items-center clients__wrapper">
                 <?php 
                 $bottom_clients = get_field('bottom_row');
                 foreach($bottom_clients as $client):?>
-                <div class="brands__brand">
+                <div class="clients__client">
                     <img src="<?php echo $client['url']; ?>" alt="<?php echo $client['title']; ?>" />
                 </div>
                 <?php endforeach;?>
