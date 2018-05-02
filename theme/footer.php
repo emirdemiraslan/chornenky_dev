@@ -95,7 +95,9 @@
 				function doneLoading(){
                     console.log('done loading');
 					container.classList.remove('loading');
-					container.classList.add('loaded');
+                    container.classList.add('loaded');
+                    var event = new Event('imagesLoaded');
+                    window.dispatchEvent(event);
 				
 				}
 				for(var i=0; i<tot; i++) {

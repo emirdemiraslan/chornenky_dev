@@ -2,32 +2,38 @@
 
 import 'fullpage.js';
 import { marquee } from '../utils/marquee';
-import { SlowMo, TimelineLite } from 'gsap';
+import { TimelineLite, Sine, Circ } from 'gsap';
 
-var default_ease = SlowMo.easeOut;
-var headline_ease = SlowMo.easeInOut;
+var default_ease = Circ.easeInOut;
+var headline_ease = Sine.easeInOut;
 var running = 0;
+
+function set_div_width(parent){
+    $(parent).each(function(i){
+        var _width = 0;
+        $(this).children('div').each(function(j){
+            _width += $(this).outerWidth(true) + 40;
+        })
+        $(this).css({width: _width +'px'});
+    });
+
+}
+function start_marque(){
+    //set width of clients row
+    set_div_width('.clients__wrapper');
+    //set_div_width('.brands__wrapper');
+    
+    //set marquees for brand logos
+    marquee('right', 10, $('#first__brand__row')[0]);
+    marquee('left', 10, $('#second__brand__row')[0]);
+    marquee('right', 20, $('#first__client__row')[0]);
+    marquee('left', 20, $('#second__client__row')[0]);
+
+}
     $(document).ready(function(e){
 
-        //set width of clients row
-        var clients_top_width = 0;
-        var clients_bottom_width = 0;
-        $('.clients--top .clients__client').each(function (i) {
-            clients_top_width += $(this).outerWidth(true) + 30;
-        });
-        var clients_bottom_width = 100;
-        $('.clients--bottom .clients__client').each(function (i) {
-            clients_bottom_width += $(this).outerWidth(true) + 30;
-        });
-        $('#first__client__row .clients__wrapper').css({ width: clients_top_width + 'px' });
-        $('#second__client__row .clients__wrapper').css({ width: clients_bottom_width + 'px' });
-
-        //set marquees for brand logos
-        marquee('right', 20, $('#first__brand__row')[0]);
-        marquee('left', 10, $('#second__brand__row')[0]);
-        marquee('right', 20, $('#first__client__row')[0]);
-        marquee('left', 10, $('#second__client__row')[0]);
         
+        window.addEventListener('imagesLoaded',function(e){start_marque()});
 
         //resize sections
         function resizeSections(){
@@ -44,7 +50,8 @@ var running = 0;
                 width:100/scale+'%',
                 position:'relative',
                 left: (100-100/scale)/2+'%'
-            })
+            });
+            
         }
 
         //set fullpage
@@ -109,9 +116,9 @@ var running = 0;
                 brandsInTween.play();
             }
         })
-        .to('#clients', 0.5, {
-            x: "+=1500px",
-            filter : "blur(2px)",
+        .to('#clients', 0.7, {
+            x: "+=1100px",
+            //filter : "blur(1px)",
             ease : default_ease,
             alpha : 0
         })/*
@@ -150,9 +157,9 @@ var running = 0;
                 
             }
         })
-        .from('#brands', 0.5, {
-            x : "-=1500px",
-            filter : "blur(2px)",
+        .from('#brands', 0.7, {
+            x : "-=1100px",
+            //filter : "blur(1px)",
             ease : default_ease,
             alpha : 0
         })

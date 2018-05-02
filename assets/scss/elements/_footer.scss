@@ -2,17 +2,20 @@
     position: relative;
     z-index: 1;
     &__top{
+
         background-color: $c_l_gr;
         min-height: 124px;
         @include rem(padding ,3.2rem);
-        @include media-breakpoint-down(md){
+        @include media-breakpoint-down(sm){
             padding: 0;
             &>.row{
                 align-items: center;
                 justify-content: center;
             }
         }
+        
     }
+    
     &__bottom{
         background-color: $c_m_gr;
         min-height: 50px;
@@ -20,7 +23,7 @@
         @include rem(padding , 1.8rem);
     }
     .nav .nav--desktop .menu__list{
-        @include media-breakpoint-down(md){
+        @include media-breakpoint-down(lg){
             justify-content: center;
             height: 50px;
         }
