@@ -3,6 +3,7 @@
 import 'fullpage.js';
 import { marquee } from '../utils/marquee';
 import { TimelineLite, Sine, Circ } from 'gsap';
+import Marquee3k from 'marquee3000';
 
 var default_ease = Circ.easeInOut;
 var headline_ease = Sine.easeInOut;
@@ -24,10 +25,12 @@ function start_marque(){
     //set_div_width('.brands__wrapper');
     
     //set marquees for brand logos
-    marquee('right', 10, $('#first__brand__row')[0]);
+   /* marquee('right', 10, $('#first__brand__row')[0]);
     marquee('left', 10, $('#second__brand__row')[0]);
     marquee('right', 20, $('#first__client__row')[0]);
     marquee('left', 20, $('#second__client__row')[0]);
+    */
+   Marquee3k.init();
 
 }
     $(document).ready(function(e){
@@ -115,16 +118,15 @@ function start_marque(){
                 $.fn.fullpage.silentMoveTo(4, 0);
                 brandsInTween.play();
             }
-        })
+        })/*
         .to('#clients', 0.7, {
             x: "+=1100px",
             //filter : "blur(1px)",
             ease : default_ease,
             alpha : 0
-        })/*
+        })*/
             .to('.clients--top', 0.5, {
                 x: "+=1000px",
-                filter: "blur(2px)",
                 ease: default_ease,
                 alpha: 0
             }, 0.1)
@@ -137,11 +139,10 @@ function start_marque(){
             }, 0.3)
             .to('.clients--bottom', 0.5, {
                 x: "-=1000px",
-                filter: "blur(2px)",
                 ease: default_ease,
                 alpha: 0
 
-            }, 0.2);*/
+            }, 0.2);
         
 
         var brandsInTween = new TimelineLite({
@@ -156,17 +157,16 @@ function start_marque(){
                 running = 0;
                 
             }
-        })
+        })/*
         .from('#brands', 0.7, {
             x : "-=1100px",
             //filter : "blur(1px)",
             ease : default_ease,
             alpha : 0
-        })
-        /*
+        })*/
+        
         .from('#brands .brands--top', 0.5, {
             x: "-=1000px",
-            filter: "blur(2px)",
             ease: default_ease,
             alpha: 0
         }, 0.1)
@@ -178,10 +178,9 @@ function start_marque(){
         }, 0)
         .from('#brands .brands--bottom', 0.5, {
             x: "+=1000px",
-            filter: "blur(2px)",
             ease: default_ease,
             alpha: 0
-        }, 0.2);*/
+        }, 0.2);
 
         //set down button in hero section
         $('#toDown').click(function (e) {
