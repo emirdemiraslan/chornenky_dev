@@ -11,7 +11,9 @@
         <div class="col-md-6 col-sm-12" style="height:100%">
             <div class="cta gradient_cta darkbg justify-content-center align-items-left" style="height:100%">
             <h1>LET US JUMPSTART<br/>YOUR NEXT CAMPAIGN</h1>
-            <a href="<?php echo get_permalink( get_page_by_path( 'work' ) ); ?>" class="button bordered">check out our work</a>
+            <div  style="width:auto; text-align:left">
+                <a href="<?php echo get_permalink( get_page_by_path( 'work' ) ); ?>" class="button pink bordered">check out our work</a>
+            </div>
             </div>
         </div>
     </div>

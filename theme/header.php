@@ -117,7 +117,7 @@
 <header class="header sticky">
 	<div class="container-fluid top">
 		<div class="row">
-			<div class="col-8">	
+			<div class="col-7 col-xs-8">	
 				<div class="brand">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<span class="brand__logo">
@@ -129,7 +129,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="col-4 nav">
+			<div class="col-5 col-xs-4 nav">
 				<div class="nav--desktop hidden-md-down">
 					<?php MOZ_Menu::nav_menu('primary'); ?>
 				</div>

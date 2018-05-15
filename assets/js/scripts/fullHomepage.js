@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import 'fullpage.js';
-import { marquee } from '../utils/marquee';
+//import { marquee } from '../utils/marquee';
 import { TimelineLite, Sine, Circ } from 'gsap';
 import Marquee3k from 'marquee3000';
 
