@@ -117,19 +117,19 @@
 <header class="header sticky">
 	<div class="container-fluid top">
 		<div class="row">
-			<div class="col-6">	
+			<div class="col-8">	
 				<div class="brand">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<span class="brand__logo">
 						<?php MOZ_SVG::svg('brand_logo'); ?>
 					</span>
-					<span class="brand__text hidden-md-down">
+					<span class="brand__text">
 						<strong>Chornenky</strong>Creative
 					</span>
 					</a>
 				</div>
 			</div>
-			<div class="col-6 nav">
+			<div class="col-4 nav">
 				<div class="nav--desktop hidden-md-down">
 					<?php MOZ_Menu::nav_menu('primary'); ?>
 				</div>

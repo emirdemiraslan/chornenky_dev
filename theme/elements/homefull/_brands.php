@@ -7,7 +7,7 @@
         $bottom_1 = array_slice($bottom_brands, 0, floor(count($bottom_brands) / 2));
         $bottom_2 = array_slice($bottom_brands, floor(count($bottom_brands) / 2));
         ?>
-    <div id ="first__brand__row" class="marquee">
+    <div id ="first__brand__row" class="marquee3k" data-speed="1" data-reverse=0>
         <div class="marquee__wrapper">
             <div class="row justify-content-around align-items-center brands__wrapper">
                 <?php foreach($top_1 as $brand):?>
@@ -34,7 +34,7 @@
     </div>
 </div>
 <div class="container-fluid brands--bottom">
-    <div id ="second__brand__row" class="marquee">
+    <div id ="second__brand__row" class="marquee3k" data-speed="1">
         <div class="marquee__wrapper">
             <div class="row justify-content-around align-items-center brands__wrapper">
                 <?php foreach($bottom_1 as $brand):?>

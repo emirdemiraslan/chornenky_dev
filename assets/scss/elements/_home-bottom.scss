@@ -15,8 +15,29 @@
                 color: $c_gh_gr;
             }
         }
+        .quote__wrapper{
+            padding: 50px 100px;
+            @include media-breakpoint-down(md){
+                padding:50px;
+            }
+        }
         .quote__title{
             @include rem(margin-top, 2.5rem);
+        }
+
+    }
+
+    .gradient_cta {
+        h1{
+            text-align: left;
+            @include media-breakpoint-down(md){
+                text-align: center;
+            }
+        }
+        .button:hover {
+            background: transparent;
+            color: #fff;
+            border-color: #fff;
         }
     }
 }

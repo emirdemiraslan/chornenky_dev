@@ -13,7 +13,7 @@ function set_div_width(parent){
     $(parent).each(function(i){
         var _width = 0;
         $(this).children('div').each(function(j){
-            _width += $(this).outerWidth(true) + 40;
+            _width += $(this).outerWidth(true) + 80;
         })
         $(this).css({width: _width +'px'});
     });
@@ -22,7 +22,7 @@ function set_div_width(parent){
 function start_marque(){
     //set width of clients row
     set_div_width('.clients__wrapper');
-    //set_div_width('.brands__wrapper');
+    set_div_width('.brands__wrapper');
     
     //set marquees for brand logos
    /* marquee('right', 10, $('#first__brand__row')[0]);
