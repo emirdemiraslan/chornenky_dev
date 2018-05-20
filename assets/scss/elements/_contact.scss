@@ -8,6 +8,7 @@ body, html{
         height: inherit;
     }
     @include media-breakpoint-down(sm){
+        padding-bottom: 0;
         .row>div{
             height: 50%;
             .inherit_height{
