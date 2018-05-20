@@ -193,6 +193,12 @@ function start_marque(){
 
         });
 
+        //override click event of scrolloverflow to work/
+        $('#home_main .section.cta .button.pink').click(function(e){
+            e.preventDefault();
+            window.location.href = "/work";
+        });
+
         //insert icons to list
 
         $("div[class*='list-icon']").each(function (i) {
