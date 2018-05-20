@@ -7,7 +7,7 @@
  */
 
 ?>
-<footer class="darkbg footer">
+<footer class="darkbg footer hidden-sm-down">
     <div class="container-fluid footer__top">
         <div class="row">
             <div class="col">

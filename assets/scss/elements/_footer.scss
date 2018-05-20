@@ -101,3 +101,9 @@
     
 }
 
+//footer padding fix
+@include media-breakpoint-down(md){
+    .fp-section.fp-table{
+        padding-bottom: 0 !important;
+    }
+}
