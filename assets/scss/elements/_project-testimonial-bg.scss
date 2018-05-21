@@ -4,10 +4,10 @@
         @include rem(padding, 5rem 0);
     }
     .quote_bg{
-        width: 460px;
+        width: 50%;
+        margin: 0 auto;
         @include media-breakpoint-down(sm){
             width: 80%;
-            margin: 0 auto;
         }
         background-color:#fff;
         @include rem(padding, 5rem 2.3rem);

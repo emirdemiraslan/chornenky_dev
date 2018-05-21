@@ -58,11 +58,11 @@ function start_marque(){
         }
 
         //set fullpage
-        var footerHeight = ($(window).width() > 768 ) ? '124px' : '0px';
-        console.log('footer: '+ footerHeight);
+        //var footerHeight = ($(window).width() > 768 ) ? '124px' : '0px';
+        //console.log('footer: '+ footerHeight);
         $('#home_main').fullpage({
             paddingTop:'60px',
-            paddingBottom:footerHeight,
+            //paddingBottom:footerHeight,
             afterRender:resizeSections,
             afterResize: resizeSections,
             scrollOverflow: true,
@@ -193,11 +193,6 @@ function start_marque(){
 
         });
 
-        //override click event of scrolloverflow to work/
-        $('#home_main .section.cta .button.pink').click(function(e){
-            e.preventDefault();
-            window.location.href = "/work";
-        });
 
         //insert icons to list
 

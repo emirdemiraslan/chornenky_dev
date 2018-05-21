@@ -1,4 +1,5 @@
 .testimonials{
+    padding: 0;
    .quote{
         @include rem(padding, 3rem 0);
         text-align: center;
@@ -16,13 +17,16 @@
             }
         }
         .quote__wrapper{
-            padding: 40px 100px;
-            @include media-breakpoint-down(lg){
-                padding:40px;
-            }
-            @include media-breakpoint-down(md){
-                padding:50px;
-            }
+            
+                padding: 40px 100px;
+                @include media-breakpoint-down(lg){
+                    padding:40px;
+                }
+                @include media-breakpoint-down(md){
+                    padding:50px;
+                    
+                }
+            
         }
         .quote__title{
             @include rem(margin-top, 2.5rem);
