@@ -2,10 +2,14 @@
     @include rem(padding, 7rem);
     border-bottom: 2px solid #979797;
     @include media-breakpoint-down(md){
-        @include rem(padding, 5rem 2rem);
+        @include rem(padding, 3rem 2rem);
     }
     h1.title{
         @include rem(margin-bottom, 7rem);
+        @include media-breakpoint-down(md){
+            @include rem(margin-bottom, .5rem);
+            line-height: 100%;
+        }
     }
     .zig_zag_row{
         img{

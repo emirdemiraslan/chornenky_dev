@@ -9,7 +9,7 @@ get_header();
 <section class="contact inherit_height">
     <div class="container-fluid inherit_height">
         <div class="row no-gutters inherit_height">
-            <div class="col-md-6 col-sm-12 inherit_height">
+            <div class="col-lg-6 col-md-12 inherit_height">
                 <div class="contact__wrapper inherit_height img-cover" style="background-image:url(<?php the_field('background'); ?>);">
                     <div class="contact__block">
                         <h1>CONTACT US</h1>
@@ -18,7 +18,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 inherit_height">
+            <div class="col-lg-6 col-md-12 inherit_height">
                 <div class="map_wrapper inherit_height">
                     <div id="infoWindow" style="display:none">
                         <div class="map__info">

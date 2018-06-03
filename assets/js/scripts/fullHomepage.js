@@ -58,11 +58,11 @@ function start_marque(){
         }
 
         //set fullpage
-        //var footerHeight = ($(window).width() > 768 ) ? '124px' : '0px';
+        var footerHeight = ($(window).width() > 768 ) ? '124px' : '0px';
         //console.log('footer: '+ footerHeight);
         $('#home_main').fullpage({
             paddingTop:'60px',
-            //paddingBottom:footerHeight,
+            paddingBottom:footerHeight,
             afterRender:resizeSections,
             afterResize: resizeSections,
             scrollOverflow: true,

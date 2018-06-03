@@ -2,6 +2,10 @@
     .content_block{
         padding: 0;
         @include rem(margin, 6rem 0 5rem 0);
+        @include media-breakpoint-down(md){
+            @include rem(margin, 3rem 0);
+
+        }
         display: flex;
         justify-content: space-between;
         align-items: flex-end;

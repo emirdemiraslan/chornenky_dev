@@ -7,8 +7,8 @@
  */
 
 ?>
-<!--
-<footer class="darkbg footer hidden-sm-down">
+
+<footer class="darkbg footer hidden-md-down">
     <div class="container-fluid footer__top">
         <div class="row">
             <div class="col">
@@ -37,7 +37,7 @@
             </div>
         </div>
     </div>
-    
+    <!--
     <div class="container-fluid footer__bottom">
         <div class="row">
             <div class="col">
@@ -56,9 +56,10 @@
             </div>
         </div>
     </div>
+    -->
     
 </footer>
--->
+
 
 
 
