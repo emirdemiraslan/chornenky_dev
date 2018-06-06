@@ -83,6 +83,7 @@
     "style-loader": "^0.16.1",
     "stylelint": "^7.10.1",
     "stylelint-config-wordpress": "^9.1.1",
+    "uglify-js": "^3.4.0",
     "url-loader": "^0.5.8",
     "vinyl-named": "1.1.0",
     "vinyl-transform": "1.0.0",
@@ -95,6 +96,7 @@
     "fullpage.js": "^2.9.5",
     "jquery.scrollto": "^2.1.2",
     "lazysizes": "3.0.0",
+    "marquee3000": "^1.0.9",
     "picturefill": "3.0.2",
     "scroll-js": "^1.8.8",
     "scrollmagic": "^2.0.5"

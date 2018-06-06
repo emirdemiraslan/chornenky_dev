@@ -8,7 +8,7 @@ get_header();
 $args = array(
 	'numberposts'	=> -1,
     'post_type'		=> 'project',
-    'orderby'       => 'ID',
+    'orderby'       => 'date',
     'order'         => 'DESC'
 );
 

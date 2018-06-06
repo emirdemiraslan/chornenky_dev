@@ -3,7 +3,7 @@
 import 'fullpage.js';
 //import { marquee } from '../utils/marquee';
 import { TimelineLite, Sine, Circ } from 'gsap';
-import Marquee3k from 'marquee3000';
+import { Marquee3k } from '../vendor/marquee3k';
 
 var default_ease = Circ.easeInOut;
 var headline_ease = Sine.easeInOut;
@@ -58,11 +58,11 @@ function start_marque(){
         }
 
         //set fullpage
-        var footerHeight = ($(window).width() > 768 ) ? '124px' : '0px';
+        //var footerHeight = ($(window).width() > 768 ) ? '124px' : '0px';
         //console.log('footer: '+ footerHeight);
         $('#home_main').fullpage({
             paddingTop:'60px',
-            paddingBottom:footerHeight,
+            paddingBottom:0,//footerHeight,
             afterRender:resizeSections,
             afterResize: resizeSections,
             scrollOverflow: true,

@@ -1,7 +1,10 @@
 <section class="project_section <?php echo get_row_layout();?>">
    <div class="container">
         <div class="row no-gutters quote justify-content-center align-items-center">
-            <div class="col-sm-12 col-md-auto">
+            <div class="col-sm-12 col-md-auto centered_section_with_icon">
+                <?php if(get_sub_field('icon')):?>
+                <img src="<?php the_sub_field('icon');?>" alt="<?php the_sub_field('title');?>">
+                <?php endif; ?>
                 <h1 class="title"><?php the_sub_field('title');?></h1>
             </div>
         </div>
