@@ -4,7 +4,7 @@
         overflow: visible;
     }
     
-    height: 540px;
+    @include rem(padding, 5rem 0);
     @include media-breakpoint-down(md){
         height: auto;
     }
@@ -14,8 +14,16 @@
     }
     */
     background-color: $c_gh_gr;
-
+    .mobile-reverse{
+        @include media-breakpoint-down(md){
+            flex-direction: column-reverse;
+        }
+    }
     .callout_img{
+        @include media-breakpoint-down(md){
+            margin-bottom: 50px;
+        }
+        /*
         position: absolute;
         left: 50%;
         max-height: 480px;
@@ -27,47 +35,26 @@
             display: block;
             margin: auto;
             left: initial;
-            &.negative{
-                //top:-20px !important;
-            }
+            
 
         }
         @include media-breakpoint-down(xs){
             max-height: 300px;
         }
+        */
     }
 
     .callout_text{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 500px;
         p{
             @include rem(font-size, 2.8rem);
             @include rem(line-height, 3.8rem);
-            @include rem(padding-right, 2.8rem);
+            @include rem(padding, 0);
+            margin: 0;
         }
-        @include media-breakpoint-down(md){
-            padding: 40px;
-            line-height: 133%;
-            position: relative;
-            align-items: flex-end;
-            height: auto;
-            p{
-                padding-top: 20px;
-            }
-        }
-        @include media-breakpoint-down(sm){
-            align-items: flex-end;
-            padding: 0;
-            p{
-
-                line-height: 133%;
-                font-size: 4vw;
-                padding-right: 0;
-                position: relative;
-            }
-        }
+        
         
     }
 }

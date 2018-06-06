@@ -1,12 +1,12 @@
 <section class="project_section <?php echo get_row_layout();?>" >
-    <img class="callout_img <?php if(get_sub_field('image_top_position')<0) echo 'negative'; ?>" src="<?php the_sub_field('image');?>" alt="" style="top:<?php the_sub_field('image_top_position');?>px;">
     <div class="container">
         <div class="row no-gutters mobile-reverse">
             <div class="col-lg-6 col-md-12 callout_text">
-                <p style="padding-bottom:<?php the_sub_field('image_top_position');?>px; top:<?php the_sub_field('image_top_position');?>px;"><?php the_sub_field('text'); ?></p>
+                <p><?php the_sub_field('text'); ?></p>
             </div>
 
-            <div class="col-lg-6 hidden-md-down">
+            <div class="col-lg-6 ">
+                <img class="callout_img " src="<?php the_sub_field('image');?>" alt="" >
             </div>
 
         </div>
