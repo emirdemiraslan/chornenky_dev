@@ -25,5 +25,13 @@
     }
     .row.zig_zag_row:nth-child(2n+1) {
         flex-direction: row-reverse;
+        
     }
+    .row.zig_zag_row:nth-child(2n)>div:last-child {
+        text-align: right;
+    }
+
+}
+.zig_zag_rows .row.zig_zag_row:nth-child(odd)>div:last-child {
+    text-align: right;
 }

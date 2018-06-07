@@ -39,9 +39,12 @@ function start_marque(){
         window.addEventListener('imagesLoaded',function(e){start_marque()});
 
         //resize sections
+
         function resizeSections(){
+            
             var scale = $('.brands .fp-tableCell').height() / 700;
             if(scale > 1) scale = 1;
+            //console.log("scale : "+ scale);
 
             
 
