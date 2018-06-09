@@ -4,6 +4,8 @@
  * Marquees for the new millenium v1.0
  * MIT License
  */
+/* eslint-disable */
+
 
 ;(function(root, factory) {
   if (typeof define === 'function' && define.amd) {

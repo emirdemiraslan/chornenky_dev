@@ -44,6 +44,7 @@ import 'glob:../svg/**/*.svg';
 import './vendor/scrolloverflow.min';
 import './scripts/fullHomepage';
 import './scripts/mobilemenu';
+import './scripts/blinkNext';
 
 // silly example:
 // import obj from './scripts/example';
