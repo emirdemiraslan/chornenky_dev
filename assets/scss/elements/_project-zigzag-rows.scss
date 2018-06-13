@@ -22,6 +22,11 @@
         img{
             @include rem(margin-top, -1.5rem);
         }
+        .col-sm-12{
+            @include media-breakpoint-down(md){
+                padding: 15px;
+            }
+        }
     }
     .row.zig_zag_row:nth-child(2n+1) {
         flex-direction: row-reverse;
