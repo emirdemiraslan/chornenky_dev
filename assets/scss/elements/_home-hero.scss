@@ -8,6 +8,9 @@
     //top:-60px;
     .hero__partial, .hero__partial>.row.no-gutters, .hero__partial .gradient_cta{
         height: 100%;
+        > .col-lg-6{
+            height: 100%;
+        }
     }
 } 
 .gradient_cta{
@@ -92,6 +95,8 @@
     transition:$quick_tr;
     @include media-breakpoint-down(sm){
         bottom: 30px;
+        transform-origin: -50% 100%;
+        transform: scale(.5);
     }
 
     .oval{

@@ -30,7 +30,7 @@ if( have_rows('services') ):?>
                 </div>
             </div>
             <?php if(get_sub_field('type')=='Hero'): ?>
-            <div class="col-lg-6 col-md-12">
+            <div class="col-lg-6 col-md-12 setHeightByContainer">
                 <div class="img-cover" style="background-image:url(<?php the_sub_field('image'); ?>);"></div>
 
                 <img src="<?php the_sub_field('image'); ?>" class="hidden-lg-up img-fluid"/>

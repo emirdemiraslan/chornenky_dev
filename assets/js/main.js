@@ -44,6 +44,8 @@ import 'glob:../svg/**/*.svg';
 import './vendor/scrolloverflow.min';
 import './scripts/fullHomepage';
 import './scripts/mobilemenu';
+import './scripts/blinkNext';
+import './scripts/setHeightByContainer';
 
 // silly example:
 // import obj from './scripts/example';

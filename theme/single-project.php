@@ -8,7 +8,7 @@ get_header();
 ?>
  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
  <?php
- $projects = get_posts( array( 'post_type' => 'project', 'orderby' => 'ID', 'order' => 'DESC', 'posts_per_page' => -1 ) );
+ $projects = get_posts( array( 'post_type' => 'project', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => -1 ) );
  $firstPost =  $projects[count($projects)-1];// first post
  $lastPost  = $projects[0]; // Last post
 

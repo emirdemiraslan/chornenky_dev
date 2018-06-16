@@ -4,7 +4,7 @@ style="background-image:url(<?php the_sub_field('image');?>)"
 >
    <div class="container-fluid">
         <div class="row no-gutters quote justify-content-center align-items-center">
-            <div class="col-sm-12 col-md-auto">
+            <div class="col-12">
                 <div class="quote_bg">
                     <div class="client_icon">
                         <img src="<?php the_sub_field('client_icon'); ?>" alt="">

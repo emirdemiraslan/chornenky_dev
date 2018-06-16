@@ -3,7 +3,8 @@
 import 'fullpage.js';
 //import { marquee } from '../utils/marquee';
 import { TimelineLite, Sine, Circ } from 'gsap';
-import Marquee3k from 'marquee3000';
+import { Marquee3k } from '../vendor/marquee3k';
+
 
 var default_ease = Circ.easeInOut;
 var headline_ease = Sine.easeInOut;
@@ -23,25 +24,24 @@ function start_marque(){
     //set width of clients row
     set_div_width('.clients__wrapper');
     set_div_width('.brands__wrapper');
-    
-    //set marquees for brand logos
-   /* marquee('right', 10, $('#first__brand__row')[0]);
-    marquee('left', 10, $('#second__brand__row')[0]);
-    marquee('right', 20, $('#first__client__row')[0]);
-    marquee('left', 20, $('#second__client__row')[0]);
-    */
-   Marquee3k.init();
+    Marquee3k.init();
 
 }
     $(document).ready(function(e){
+        
 
         
         window.addEventListener('imagesLoaded',function(e){start_marque()});
 
+        
+
         //resize sections
+
         function resizeSections(){
+            
             var scale = $('.brands .fp-tableCell').height() / 700;
             if(scale > 1) scale = 1;
+            //console.log("scale : "+ scale);
 
             
 
@@ -62,12 +62,13 @@ function start_marque(){
         //console.log('footer: '+ footerHeight);
         $('#home_main').fullpage({
             paddingTop:'60px',
-            //paddingBottom:footerHeight,
+            paddingBottom:0,//footerHeight,
             afterRender:resizeSections,
             afterResize: resizeSections,
             scrollOverflow: true,
+            touchSensitivity:1,
             onLeave: function (index, nextIndex, direction) {
-                
+
                 
 
                 //after leaving section 2
@@ -76,6 +77,7 @@ function start_marque(){
                     //alert("Going to section 3!");
                     if(running<1){
                         console.log("next section : "+nextIndex);
+                        running=1;
                         clientOutTweens.play();
                         //brandsInTween.play();
                     }
@@ -85,7 +87,7 @@ function start_marque(){
 
                 else if (index == 4 && nextIndex == 3) {
                     if(running<1){
-
+                        running=1;
                         //clientOutTweens.reverse();
                         brandsInTween.reverse();
                        
@@ -100,12 +102,15 @@ function start_marque(){
                     $('#toDown').fadeIn();
                 }
                 
+                
             }
         });
 
 
 
         //Tweens
+
+        
         
         var clientOutTweens = new TimelineLite({
             paused:true,
@@ -115,9 +120,12 @@ function start_marque(){
 
             },
             onComplete: function () {
-                running=0;
+                
                 $.fn.fullpage.silentMoveTo(4, 0);
                 brandsInTween.play();
+            },
+            onReverseComplete: function() {
+                running=0;
             }
         })/*
         .to('#clients', 0.7, {
@@ -148,8 +156,10 @@ function start_marque(){
 
         var brandsInTween = new TimelineLite({
             paused:true,
+            onStart:function(){
+
+            },
             onReverseComplete:function(){
-                running=0;
                 $.fn.fullpage.silentMoveTo(2, 0);
                 clientOutTweens.reverse();
 

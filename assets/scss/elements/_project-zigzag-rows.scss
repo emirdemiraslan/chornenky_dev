@@ -2,17 +2,41 @@
     @include rem(padding, 7rem);
     border-bottom: 2px solid #979797;
     @include media-breakpoint-down(md){
-        @include rem(padding, 5rem 2rem);
+        @include rem(padding, 3rem 2rem);
+    }
+    .centered_section_with_icon{
+        padding: 0;
+        img{
+            margin-bottom: 10px;
+            
+        }
     }
     h1.title{
-        @include rem(margin-bottom, 7rem);
+        @include rem(margin-bottom, 1rem);
+        @include media-breakpoint-down(md){
+            @include rem(margin-bottom, .5rem);
+            line-height: 100%;
+        }
     }
     .zig_zag_row{
         img{
-            @include rem(margin-top, 2.5rem);
+            @include rem(margin-top, -1.5rem);
+        }
+        .col-sm-12{
+            @include media-breakpoint-down(md){
+                padding: 15px;
+            }
         }
     }
     .row.zig_zag_row:nth-child(2n+1) {
         flex-direction: row-reverse;
+        
     }
+    .row.zig_zag_row:nth-child(2n)>div:last-child {
+        text-align: right;
+    }
+
+}
+.zig_zag_rows .row.zig_zag_row:nth-child(odd)>div:last-child {
+    text-align: right;
 }

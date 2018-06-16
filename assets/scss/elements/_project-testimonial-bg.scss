@@ -2,12 +2,18 @@
     background-position: 50%;
     .quote{
         @include rem(padding, 5rem 0);
+        .quote__wrapper{
+            @include media-breakpoint-down(md){
+                @include rem(padding, 2rem);
+            }
+        }
     }
     .quote_bg{
         width: 50%;
         margin: 0 auto;
         @include media-breakpoint-down(sm){
             width: 80%;
+            @include rem(padding, 2rem);
         }
         background-color:#fff;
         @include rem(padding, 5rem 2.3rem);
