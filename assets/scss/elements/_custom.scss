@@ -8,6 +8,14 @@ html, body, p{
 p{
     @include rem(margin, 0 0 1rem 0 );
 }
+a{
+    color: $c_brand;
+    transition: $quick_tr ;
+    &:hover{
+        color: $c_d_gr;
+    }
+}
+
 hr{
     border-style: solid;
     border-color: #fff;
