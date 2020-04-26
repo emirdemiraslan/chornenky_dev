@@ -95,6 +95,7 @@
 .header_meta{
     @include centerer("y");
     @include rem(margin-top, 3rem);
+    @include rem(padding, 0 1rem);
     @include rem(line-height, 3.2rem);
     width: 100%;
     text-align: center;
