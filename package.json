@@ -93,7 +93,7 @@
   },
   "dependencies": {
     "babel-polyfill": "6.23.0",
-    "fullpage.js": "^2.9.5",
+    "fullpage.js": "^4.0.5",
     "jquery.scrollto": "^2.1.2",
     "lazysizes": "3.0.0",
     "marquee3000": "^1.0.9",
