@@ -95,7 +95,7 @@
 		transform-origin: 50% 50%;
 	}
 	</style>
-	<script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/kimmobrunfeldt/progressbar.js@master/dist/progressbar.min.js"></script>
 	
 </head>
 <body class="site__body">
